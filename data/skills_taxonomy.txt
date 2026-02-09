@@ -1,0 +1,42 @@
+python
+java
+c++
+sql
+mongodb
+postgresql
+mysql
+aws
+azure
+gcp
+docker
+kubernetes
+linux
+git
+github
+rest
+fastapi
+flask
+django
+streamlit
+pandas
+numpy
+scikit-learn
+pytorch
+tensorflow
+nlp
+rag
+llm
+langchain
+opencv
+machine learning
+deep learning
+data analysis
+statistics
+power bi
+tableau
+spark
+hadoop
+airflow
+mlops
+ci/cd
+pytest

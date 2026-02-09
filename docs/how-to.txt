@@ -1,0 +1,11 @@
+From Anaconda Navigator
+- Setup your environment ( myenv )
+From Environments/myenv --> Open Terminal
+
+On Terminal 
+Change to project directory
+ex : cd Code/matchrai
+
+pip install -r requirements.txt
+
+streamlit run app.py

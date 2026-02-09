@@ -1,0 +1,54 @@
+Campus Placement
+
+Job Title: Assistant System Engineer (ASE)
+Company: Infosys / TCS / Wipro
+Location: India (Multiple locations)
+Eligibility: Freshers
+
+Job Description
+
+We are hiring fresh graduates for the role of Assistant System Engineer. Selected candidates will undergo training and work on software development, testing, and deployment projects.
+
+Responsibilities
+
+Develop software applications using Java, Python, or C++
+
+Work on database development using SQL
+
+Perform software testing and debugging
+
+Write efficient and maintainable code
+
+Collaborate with project teams
+
+Participate in training programs
+
+Required Skills
+
+Programming in Python / Java / C++
+
+Basic knowledge of Data Structures and Algorithms
+
+SQL and database fundamentals
+
+Problem-solving skills
+
+Basic knowledge of OOP
+
+Preferred Skills
+
+Knowledge of web development
+
+Knowledge of Git
+
+Knowledge of Linux
+
+Internship or academic project experience
+
+Eligibility Criteria
+
+Bachelor’s degree in Computer Science / IT / Engineering
+
+CGPA ≥ 6.5 or equivalent
+
+No active backlogs

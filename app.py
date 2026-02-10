@@ -77,7 +77,7 @@ if run:
     c1, c2 = st.columns(2)
 
     with c1:
-        st.subheader("Matched Skills (from JD)")
+        st.subheader("Matched Skills (from Job Description)")
         if gaps["matched"]:
             st.success(", ".join(gaps["matched"]))
         else:

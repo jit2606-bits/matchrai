@@ -4,6 +4,11 @@ from typing import Optional, Tuple, Dict, Any, List
 import numpy as np
 
 from .utils import tokenize_simple
+# adding function for phase3 to determine ATS skill overlap
+def ats_skill_overlap(resume_skills: set[str], jd_skills: set[str]) -> float:
+    if not jd_skills:
+        return 0.0
+    return len(resume_skills & jd_skills) / len(jd_skills)
 
 # --- Optional semantic model ---
 def _try_load_sentence_transformer(model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
@@ -67,21 +72,40 @@ def fresher_weighting(years_exp: Optional[float], fresher_mode: bool) -> Dict[st
         return {"semantic": 0.70, "ats": 0.30}
     return {"semantic": 0.55, "ats": 0.45}
 
-def compute_match(resume_text: str, jd_text: str, years_exp: Optional[float] = None, fresher_mode: bool = False) -> MatchScores:
+def compute_match(
+    resume_text: str,
+    jd_text: str,
+    years_exp: Optional[float] = None,
+    fresher_mode: bool = False,
+    ats_override: Optional[float] = None
+) -> MatchScores:
+
     sem, method = semantic_similarity(resume_text, jd_text)
-    ats = ats_keyword_score(resume_text, jd_text)
+
+    if ats_override is not None:
+        ats = ats_override
+        ats_source = "skill_overlap"
+    else:
+        ats = ats_keyword_score(resume_text, jd_text)
+        ats_source = "keyword"
+
     w = fresher_weighting(years_exp, fresher_mode)
 
     final = w["semantic"] * sem + w["ats"] * ats
     final = float(max(0.0, min(1.0, final)))
 
     return MatchScores(
-        semantic_score=sem,
-        ats_score=ats,
-        final_score=final,
-        method=method,
-        breakdown={"weights": w, "years_experience_estimate": years_exp, "fresher_mode": fresher_mode},
-    )
+    semantic_score=sem,
+    ats_score=ats,
+    final_score=final,
+    method=method,
+    breakdown={
+        "weights": w,
+        "ats_source": ats_source,
+        "years_experience_estimate": years_exp,   
+        "fresher_mode": fresher_mode              
+    },
+)
 
 def score_to_percent(x: float) -> int:
     return int(round(100 * max(0.0, min(1.0, x))))

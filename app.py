@@ -4,6 +4,8 @@ from pathlib import Path
 
 import streamlit as st
 
+from ml.skills import extract_skills
+from ml.scoring import ats_skill_overlap
 from ml.parsing import parse_resume, parse_job_description
 from ml.skills import build_skill_taxonomy, keyword_gaps
 from ml.scoring import compute_match, score_to_percent
@@ -53,24 +55,65 @@ if run:
     parsed = parse_resume(tmp_path)
     jd_clean = parse_job_description(jd_text)
 
-    # Compute scores
-    scores = compute_match(
-        resume_text=parsed.raw_text,
-        jd_text=jd_clean,
-        years_exp=parsed.years_experience_estimate,
-        fresher_mode=fresher_mode,
-    )
+    # phase 3
+    # -------------------------------
+    # Extract skills FIRST
+    # -------------------------------
+    resume_sk = set(extract_skills(parsed.raw_text, taxonomy))
+    jd_sk = set(extract_skills(jd_clean, taxonomy))
 
+    # Debug (optional)
+    #st.write("DEBUG jd_skills_count:", len(jd_sk))
+    #st.write("DEBUG resume_skills_count:", len(resume_sk))
+    #st.write("DEBUG overlap_count:", len(jd_sk & resume_sk))
+
+    # -------------------------------
+    # Compute ATS based on SKILLS
+    # -------------------------------
+    ats2 = ats_skill_overlap(resume_sk, jd_sk)
+
+    #st.write("DEBUG ATS Skill Overlap:", ats2)
+
+    # -------------------------------
+    # Compute FINAL SCORE using override
+    # -------------------------------
+    scores = compute_match(
+    resume_text=parsed.raw_text,
+    jd_text=jd_clean,
+    years_exp=parsed.years_experience_estimate,
+    fresher_mode=fresher_mode,
+    ats_override=ats2   # important: pass the skill-based ATS score as an override to the main compute_match function
+    )
+    
+   
+    # Debug statements 
+    #st.write("DEBUG semantic_score:", scores.semantic_score)
+    #st.write("DEBUG ats_score:", scores.ats_score)
+    #st.write("DEBUG final_score:", scores.final_score)
+    #st.write("DEBUG method:", scores.method)
+    
     # Skill gaps
     gaps = keyword_gaps(parsed.raw_text, jd_clean, taxonomy)
     summary = build_summary(scores, gaps, parsed.cgpa)
+    # Added for phase 3 to stop ATS from pulling score down
+    resume_sk = set(extract_skills(parsed.raw_text, taxonomy))
+    jd_sk = set(extract_skills(jd_clean, taxonomy))
 
+    ats2 = ats_skill_overlap(resume_sk, jd_sk)
+    
+    st.markdown("---")
+    topA, topB, topC = st.columns(3)
+    topA.metric("Final Match Score", summary["final"])
+    topB.metric("Semantic Similarity", summary["semantic"])
+    topC.metric("ATS Skill Overlap", f"{int(round(ats2*100))}%")
+    """
     st.markdown("---")
     topA, topB, topC = st.columns(3)
     topA.metric("Final Match Score", summary["final"])
     topB.metric("Semantic Similarity", summary["semantic"])
     topC.metric("ATS Keyword Score", summary["ats"])
-
+    """  
+    
     st.caption(f"Weighting used: semantic={scores.breakdown['weights']['semantic']:.2f}, ats={scores.breakdown['weights']['ats']:.2f} | "
                f"Estimated experience: {scores.breakdown['years_experience_estimate']} years | CGPA: {summary['cgpa']}")
 

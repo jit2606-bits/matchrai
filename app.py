@@ -13,11 +13,12 @@ from ml.explain import build_summary, recommendation_text
 
 st.set_page_config(page_title="MatchrAI – Resume Analyzer & Job Matcher", layout="wide")
 
-st.title("MatchrAI – Resume Analyzer & Job Match System (Phase-2 PoC)")
+st.title("MatchrAI – Resume Analyzer & Job Match System (Capstone Project)")
 st.caption("Upload a resume + paste a job description → get match score, ATS score, and skill gaps.")
 
 SKILLS_PATH = Path("data/skills_taxonomy.txt")
 taxonomy = build_skill_taxonomy(SKILLS_PATH)
+
 
 with st.sidebar:
     st.header("Settings")
@@ -106,14 +107,7 @@ if run:
     topA.metric("Final Match Score", summary["final"])
     topB.metric("Semantic Similarity", summary["semantic"])
     topC.metric("ATS Skill Overlap", f"{int(round(ats2*100))}%")
-    """
-    st.markdown("---")
-    topA, topB, topC = st.columns(3)
-    topA.metric("Final Match Score", summary["final"])
-    topB.metric("Semantic Similarity", summary["semantic"])
-    topC.metric("ATS Keyword Score", summary["ats"])
-    """  
-    
+        
     st.caption(f"Weighting used: semantic={scores.breakdown['weights']['semantic']:.2f}, ats={scores.breakdown['weights']['ats']:.2f} | "
                f"Estimated experience: {scores.breakdown['years_experience_estimate']} years | CGPA: {summary['cgpa']}")
 

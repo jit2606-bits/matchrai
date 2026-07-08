@@ -2,6 +2,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional, Tuple, Dict, Any, List
 import numpy as np
+from pathlib import Path
+from sentence_transformers import SentenceTransformer
 
 from .utils import tokenize_simple
 # adding function for phase3 to determine ATS skill overlap
@@ -11,12 +13,31 @@ def ats_skill_overlap(resume_skills: set[str], jd_skills: set[str]) -> float:
     return len(resume_skills & jd_skills) / len(jd_skills)
 
 # --- Optional semantic model ---
-def _try_load_sentence_transformer(model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+
+
+def _try_load_sentence_transformer():
+    project_root = Path(__file__).resolve().parent.parent
+    model_path = project_root / "models" / "resume_jd_matcher"
+
+    print("Looking for model at:", model_path)
+
+    if model_path.exists() and (model_path / "modules.json").exists():
+        print("Loading fine-tuned model...")
+        return SentenceTransformer(str(model_path))
+
+    print("Fine-tuned model not found. Loading base model.")
+    return SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+
+#def _try_load_sentence_transformer(model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+
+'''
+def _try_load_sentence_transformer(model_name: str = "models/resume_jd_matcher"):
     try:
         from sentence_transformers import SentenceTransformer
         return SentenceTransformer(model_name)
     except Exception:
         return None
+'''
 
 def cosine(a: np.ndarray, b: np.ndarray) -> float:
     denom = (np.linalg.norm(a) * np.linalg.norm(b))

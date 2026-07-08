@@ -6,6 +6,19 @@ On Terminal
 Change to project directory
 ex : cd Code/matchrai
 
+- First train the model
+cd ml
+pip install -U accelerate transformers datasets sentence-transformers
+python train_matcher.py
+
+- Then, run the app
+
 pip install -r requirements.txt
+
+- Additional installs for Sentence Transformer
+pip uninstall transformers sentence-transformers torch torchvision -y
+pip install torch==2.6.0 torchvision==0.21.0
+pip install transformers==4.46.3
+pip install sentence-transformers==3.3.1
 
 streamlit run app.py

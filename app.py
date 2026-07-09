@@ -73,43 +73,97 @@ if run:
     # -------------------------------
     ats2 = ats_skill_overlap(resume_sk, jd_sk)
 
+   
     #st.write("DEBUG ATS Skill Overlap:", ats2)
 
     # -------------------------------
     # Compute FINAL SCORE using override
     # -------------------------------
-    scores = compute_match(
-    resume_text=parsed.raw_text,
-    jd_text=jd_clean,
-    years_exp=parsed.years_experience_estimate,
-    fresher_mode=fresher_mode,
-    ats_override=ats2   # important: pass the skill-based ATS score as an override to the main compute_match function
-    )
     
+    # Commenting out for comparison of custom SLM and LoRA
+     
+    #scores = compute_match(
+    #resume_text=parsed.raw_text,
+    #jd_text=jd_clean,
+    #years_exp=parsed.years_experience_estimate,
+    #fresher_mode=fresher_mode,
+    #ats_override=ats2   # important: pass the skill-based ATS score as an override to the main compute_match function
+    #)
+    
+    scores_full = compute_match(
+    resume_text=parsed.raw_text,
+    jd_text=jd_text,
+    years_exp=parsed.years_experience_estimate,
+    fresher_mode=True,
+    ats_override=ats2,
+    model_type="full"
+    )
+
+    scores_lora = compute_match(
+    resume_text=parsed.raw_text,
+    jd_text=jd_text,
+    years_exp=parsed.years_experience_estimate,
+    fresher_mode=True,
+    ats_override=ats2,
+    model_type="lora"
+    )
    
+    # Skill gaps
+    gaps = keyword_gaps(parsed.raw_text, jd_clean, taxonomy)
+
     # Debug statements 
     #st.write("DEBUG semantic_score:", scores.semantic_score)
     #st.write("DEBUG ats_score:", scores.ats_score)
     #st.write("DEBUG final_score:", scores.final_score)
     #st.write("DEBUG method:", scores.method)
     
-    # Skill gaps
-    gaps = keyword_gaps(parsed.raw_text, jd_clean, taxonomy)
-    summary = build_summary(scores, gaps, parsed.cgpa)
+    summary_full = build_summary(scores_full, gaps, parsed.cgpa)
+    summary_lora = build_summary(scores_lora, gaps, parsed.cgpa)
+
+    st.markdown("---")
+    st.subheader("Model Comparison: Full Fine-Tuning vs LoRA / PEFT")
+
+    col_full, col_lora = st.columns(2)
+
+    with col_full:
+        st.markdown("### Full Fine-Tuned Model")
+        st.metric("Final Match Score", summary_full["final"])
+        st.metric("Semantic Similarity", summary_full["semantic"])
+        st.metric("ATS Skill Overlap", f"{int(round(ats2 * 100))}%")
+
+    with col_lora:
+        st.markdown("### LoRA / PEFT Model")
+        st.metric("Final Match Score", summary_lora["final"])
+        st.metric("Semantic Similarity", summary_lora["semantic"])
+        st.metric("ATS Skill Overlap", f"{int(round(ats2 * 100))}%")
+
+    delta = int(round(scores_lora.final_score * 100)) - int(round(scores_full.final_score * 100))
+    st.info(f"LoRA vs Full Fine-Tuned Difference: {delta:+d} percentage points")
+
+   
+
+    # Commenting out for side by side comparison
+    #summary = build_summary(scores, gaps, parsed.cgpa)
+
     # Added for phase 3 to stop ATS from pulling score down
     resume_sk = set(extract_skills(parsed.raw_text, taxonomy))
     jd_sk = set(extract_skills(jd_clean, taxonomy))
 
     ats2 = ats_skill_overlap(resume_sk, jd_sk)
     
-    st.markdown("---")
-    topA, topB, topC = st.columns(3)
-    topA.metric("Final Match Score", summary["final"])
-    topB.metric("Semantic Similarity", summary["semantic"])
-    topC.metric("ATS Skill Overlap", f"{int(round(ats2*100))}%")
-        
-    st.caption(f"Weighting used: semantic={scores.breakdown['weights']['semantic']:.2f}, ats={scores.breakdown['weights']['ats']:.2f} | "
-               f"Estimated experience: {scores.breakdown['years_experience_estimate']} years | CGPA: {summary['cgpa']}")
+    # Commenting out for side by side comparison
+    #st.markdown("---")
+    #topA, topB, topC = st.columns(3)
+    #topA.metric("Final Match Score", summary["final"])
+    #topB.metric("Semantic Similarity", summary["semantic"])
+    #topC.metric("ATS Skill Overlap", f"{int(round(ats2*100))}%")
+    
+    st.caption(
+    f"Weighting used: semantic={scores_full.breakdown['weights']['semantic']:.2f}, "
+    f"ats={scores_full.breakdown['weights']['ats']:.2f} | "
+    f"Estimated experience: {parsed.years_experience_estimate or 'Not detected'} years | "
+    f"CGPA: {summary_full['cgpa']}"
+    )
 
     c1, c2 = st.columns(2)
 

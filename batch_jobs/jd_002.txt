@@ -1,0 +1,64 @@
+Data Scientist (Entry-Level / Fresher)
+
+Job Title: Data Scientist
+Location: Hyderabad, India
+Experience: 0–2 years
+
+Job Overview
+
+We are seeking a Data Scientist to analyze structured and unstructured data, develop predictive models, and generate actionable insights. The candidate should have strong programming skills and hands-on experience with data science tools and machine learning.
+
+Responsibilities
+
+Analyze large datasets using Python and SQL
+
+Build machine learning models using scikit-learn, TensorFlow, or PyTorch
+
+Perform data preprocessing, feature engineering, and model evaluation
+
+Develop predictive models for classification and regression problems
+
+Create data visualizations using Matplotlib, Seaborn, or Plotly
+
+Work with Pandas and NumPy for data manipulation
+
+Collaborate with engineering teams to deploy models
+
+Document findings and present results
+
+Required Skills
+
+Python programming
+
+Machine Learning
+
+Statistics and probability
+
+Pandas, NumPy
+
+scikit-learn
+
+SQL
+
+Data visualization
+
+Feature engineering
+
+Preferred Skills
+
+Deep learning (TensorFlow or PyTorch)
+
+NLP experience
+
+Experience with cloud platforms (AWS, Azure, GCP)
+
+Experience with Streamlit or Dash
+
+Knowledge of big data tools (Spark)
+
+Education
+
+Bachelor’s or Master’s degree in Computer Science, Data Science, AI, Statistics, or related field
+
+Strong academic projects in data science
+

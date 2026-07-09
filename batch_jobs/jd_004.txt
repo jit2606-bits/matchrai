@@ -1,0 +1,58 @@
+Software Engineer (Entry-Level)
+
+Job Title: Software Engineer
+Location: Pune, India
+Experience: 0–2 years
+
+Job Overview
+
+We are looking for a Software Engineer to design, develop, and maintain scalable software systems. Fresh graduates with strong programming skills and project experience are encouraged to apply.
+
+Responsibilities
+
+Develop and maintain software applications using Python or Java
+
+Design and implement REST APIs using Flask or FastAPI
+
+Write clean, efficient, and maintainable code
+
+Use Git for version control
+
+Debug and fix software defects
+
+Work with databases such as MySQL or PostgreSQL
+
+Collaborate with cross-functional teams
+
+Required Skills
+
+Python or Java
+
+Data structures and algorithms
+
+Object-oriented programming
+
+SQL and database concepts
+
+Git and GitHub
+
+Linux basics
+
+Preferred Skills
+
+Web development (Flask, Django)
+
+REST API development
+
+Docker
+
+Cloud platforms (AWS, Azure, GCP)
+
+CI/CD tools
+
+Education
+
+Bachelor’s degree in Computer Science, IT, or related field
+
+Strong academic and project experience
+

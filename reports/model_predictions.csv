@@ -1,0 +1,451 @@
+pair_id,model,label,prediction,absolute_error,match_category,target_role,domain
+pair_001,generic_all_MiniLM,0.85,0.7233342528343201,0.1266657471656799,strong,Data Scientist,Analytics
+pair_002,generic_all_MiniLM,0.94,0.6591836214065552,0.28081637859344477,strong,Financial Data Scientist,Finance AI
+pair_003,generic_all_MiniLM,0.22,0.1578509509563446,0.0621490490436554,weak,Healthcare AI Engineer,Healthcare AI
+pair_004,generic_all_MiniLM,0.36,0.1742181032896042,0.1857818967103958,weak,Healthcare AI Engineer,Healthcare AI
+pair_005,generic_all_MiniLM,0.74,0.5675582885742188,0.17244171142578124,medium,Data Scientist,Analytics
+pair_006,generic_all_MiniLM,0.9,0.6577820181846619,0.24221798181533816,strong,Computer Vision Engineer,Computer Vision
+pair_007,generic_all_MiniLM,0.64,0.47448110580444336,0.16551889419555665,medium,Healthcare AI Engineer,Healthcare AI
+pair_008,generic_all_MiniLM,0.77,0.42491966485977173,0.3450803351402283,medium,AI Application Developer,GenAI Apps
+pair_009,generic_all_MiniLM,0.31,0.17703008651733398,0.132969913482666,weak,Healthcare AI Engineer,Healthcare AI
+pair_010,generic_all_MiniLM,0.73,0.5453653335571289,0.18463466644287108,medium,Machine Learning Engineer,General AI
+pair_011,generic_all_MiniLM,0.61,0.44365793466567993,0.16634206533432006,medium,NLP Engineer,LLM/NLP
+pair_012,generic_all_MiniLM,0.91,0.7200743556022644,0.18992564439773563,strong,Data Scientist,Analytics
+pair_013,generic_all_MiniLM,0.78,0.5120333433151245,0.2679666566848755,medium,MLOps Engineer,MLOps
+pair_014,generic_all_MiniLM,0.94,0.6779188513755798,0.2620811486244201,strong,Data Scientist,Analytics
+pair_015,generic_all_MiniLM,0.86,0.6461056470870972,0.21389435291290282,strong,Data Scientist,Analytics
+pair_016,generic_all_MiniLM,0.95,0.6312782764434814,0.3187217235565185,strong,AI Application Developer,GenAI Apps
+pair_017,generic_all_MiniLM,0.16,0.4033234417438507,0.2433234417438507,weak,Data Scientist,Analytics
+pair_018,generic_all_MiniLM,0.91,0.6619886755943298,0.2480113244056702,strong,Data Scientist,Analytics
+pair_019,generic_all_MiniLM,0.89,0.6799226999282837,0.21007730007171632,strong,Data Scientist,Analytics
+pair_020,generic_all_MiniLM,0.33,0.13674584031105042,0.1932541596889496,weak,Healthcare AI Engineer,Healthcare AI
+pair_021,generic_all_MiniLM,0.9,0.6992108225822449,0.20078917741775515,strong,Computer Vision Engineer,Computer Vision
+pair_022,generic_all_MiniLM,0.62,0.5818745493888855,0.0381254506111145,medium,Financial Data Scientist,Finance AI
+pair_023,generic_all_MiniLM,0.41,0.29103007912635803,0.11896992087364194,weak,Machine Learning Engineer,General AI
+pair_024,generic_all_MiniLM,0.82,0.6250020861625671,0.1949979138374328,strong,Machine Learning Engineer,General AI
+pair_025,generic_all_MiniLM,0.84,0.6459682583808899,0.19403174161911008,strong,MLOps Engineer,MLOps
+pair_026,generic_all_MiniLM,0.88,0.6718132495880127,0.2081867504119873,strong,Financial Data Scientist,Finance AI
+pair_027,generic_all_MiniLM,0.77,0.5671956539154053,0.20280434608459474,medium,Computer Vision Engineer,Computer Vision
+pair_028,generic_all_MiniLM,0.67,0.4579722285270691,0.21202777147293095,medium,NLP Engineer,LLM/NLP
+pair_029,generic_all_MiniLM,0.75,0.48351749777793884,0.26648250222206116,medium,NLP Engineer,LLM/NLP
+pair_030,generic_all_MiniLM,0.56,0.5263204574584961,0.03367954254150396,medium,Data Scientist,Analytics
+pair_031,generic_all_MiniLM,0.39,0.3279111981391907,0.06208880186080934,weak,MLOps Engineer,MLOps
+pair_032,generic_all_MiniLM,0.36,0.27836766839027405,0.08163233160972594,weak,Financial Data Scientist,Finance AI
+pair_033,generic_all_MiniLM,0.9,0.6312896013259888,0.26871039867401125,strong,MLOps Engineer,MLOps
+pair_034,generic_all_MiniLM,0.89,0.6560169458389282,0.2339830541610718,strong,Financial Data Scientist,Finance AI
+pair_035,generic_all_MiniLM,0.85,0.6623272895812988,0.18767271041870115,strong,Financial Data Scientist,Finance AI
+pair_036,generic_all_MiniLM,0.91,0.7081245183944702,0.20187548160552982,strong,Computer Vision Engineer,Computer Vision
+pair_037,generic_all_MiniLM,0.96,0.6402386426925659,0.31976135730743405,strong,MLOps Engineer,MLOps
+pair_038,generic_all_MiniLM,0.67,0.5914840698242188,0.07851593017578129,medium,Data Scientist,Analytics
+pair_039,generic_all_MiniLM,0.89,0.7064456939697266,0.18355430603027345,strong,Computer Vision Engineer,Computer Vision
+pair_040,generic_all_MiniLM,0.93,0.6378329992294312,0.2921670007705689,strong,Healthcare AI Engineer,Healthcare AI
+pair_041,generic_all_MiniLM,0.86,0.6954236030578613,0.16457639694213866,strong,Computer Vision Engineer,Computer Vision
+pair_042,generic_all_MiniLM,0.58,0.5550732612609863,0.024926738739013632,medium,Financial Data Scientist,Finance AI
+pair_043,generic_all_MiniLM,0.82,0.549555242061615,0.27044475793838496,strong,MLOps Engineer,MLOps
+pair_044,generic_all_MiniLM,0.87,0.5137509703636169,0.35624902963638305,strong,NLP Engineer,LLM/NLP
+pair_045,generic_all_MiniLM,0.93,0.6277658939361572,0.3022341060638428,strong,Machine Learning Engineer,General AI
+pair_046,generic_all_MiniLM,0.59,0.5945930480957031,0.004593048095703156,medium,Financial Data Scientist,Finance AI
+pair_047,generic_all_MiniLM,0.57,0.49522387981414795,0.074776120185852,medium,NLP Engineer,LLM/NLP
+pair_048,generic_all_MiniLM,0.2,0.34938210248947144,0.14938210248947142,weak,MLOps Engineer,MLOps
+pair_049,generic_all_MiniLM,0.72,0.45528098940849304,0.26471901059150693,medium,Healthcare AI Engineer,Healthcare AI
+pair_050,generic_all_MiniLM,0.89,0.7218988537788391,0.1681011462211609,strong,Healthcare AI Engineer,Healthcare AI
+pair_051,generic_all_MiniLM,0.84,0.6404067873954773,0.19959321260452267,strong,Financial Data Scientist,Finance AI
+pair_052,generic_all_MiniLM,0.23,0.3169224262237549,0.08692242622375487,weak,Financial Data Scientist,Finance AI
+pair_053,generic_all_MiniLM,0.18,0.3424098789691925,0.1624098789691925,weak,NLP Engineer,LLM/NLP
+pair_054,generic_all_MiniLM,0.58,0.5603315830230713,0.01966841697692867,medium,Data Scientist,Analytics
+pair_055,generic_all_MiniLM,0.4,0.32826101779937744,0.07173898220062258,weak,MLOps Engineer,MLOps
+pair_056,generic_all_MiniLM,0.32,0.2988484799861908,0.02115152001380921,weak,AI Application Developer,GenAI Apps
+pair_057,generic_all_MiniLM,0.41,0.33417344093322754,0.07582655906677244,weak,MLOps Engineer,MLOps
+pair_058,generic_all_MiniLM,0.91,0.6876667737960815,0.2223332262039185,strong,AI Application Developer,GenAI Apps
+pair_059,generic_all_MiniLM,0.28,0.28186237812042236,0.0018623781204223366,weak,AI Application Developer,GenAI Apps
+pair_060,generic_all_MiniLM,0.65,0.5988507270812988,0.051149272918701194,medium,Data Scientist,Analytics
+pair_061,generic_all_MiniLM,0.61,0.5294315814971924,0.0805684185028076,medium,MLOps Engineer,MLOps
+pair_062,generic_all_MiniLM,0.45,0.2724950909614563,0.1775049090385437,weak,Machine Learning Engineer,General AI
+pair_063,generic_all_MiniLM,0.91,0.6532506942749023,0.2567493057250977,strong,AI Application Developer,GenAI Apps
+pair_064,generic_all_MiniLM,0.6,0.48261186480522156,0.11738813519477842,medium,Healthcare AI Engineer,Healthcare AI
+pair_065,generic_all_MiniLM,0.77,0.5456230640411377,0.22437693595886232,medium,Computer Vision Engineer,Computer Vision
+pair_066,generic_all_MiniLM,0.95,0.7069016695022583,0.24309833049774165,strong,Computer Vision Engineer,Computer Vision
+pair_067,generic_all_MiniLM,0.64,0.5199741721153259,0.12002582788467409,medium,MLOps Engineer,MLOps
+pair_068,generic_all_MiniLM,0.77,0.5944304466247559,0.17556955337524416,medium,Financial Data Scientist,Finance AI
+pair_069,generic_all_MiniLM,0.85,0.7039476037025452,0.1460523962974548,strong,Computer Vision Engineer,Computer Vision
+pair_070,generic_all_MiniLM,0.67,0.405392587184906,0.26460741281509403,medium,NLP Engineer,LLM/NLP
+pair_071,generic_all_MiniLM,0.89,0.5929656028747559,0.29703439712524415,strong,NLP Engineer,LLM/NLP
+pair_072,generic_all_MiniLM,0.74,0.6167559027671814,0.1232440972328186,medium,Data Scientist,Analytics
+pair_073,generic_all_MiniLM,0.69,0.5732213258743286,0.11677867412567133,medium,Financial Data Scientist,Finance AI
+pair_074,generic_all_MiniLM,0.65,0.5556460618972778,0.09435393810272219,medium,Data Scientist,Analytics
+pair_075,generic_all_MiniLM,0.95,0.7474336624145508,0.20256633758544917,strong,Healthcare AI Engineer,Healthcare AI
+pair_076,generic_all_MiniLM,0.66,0.5469675660133362,0.11303243398666385,medium,Computer Vision Engineer,Computer Vision
+pair_077,generic_all_MiniLM,0.82,0.7321034669876099,0.08789653301239009,strong,Data Scientist,Analytics
+pair_078,generic_all_MiniLM,0.72,0.4837731420993805,0.23622685790061948,medium,NLP Engineer,LLM/NLP
+pair_079,generic_all_MiniLM,0.23,0.3659681975841522,0.1359681975841522,weak,Data Scientist,Analytics
+pair_080,generic_all_MiniLM,0.86,0.625487208366394,0.23451279163360594,strong,Data Scientist,Analytics
+pair_081,generic_all_MiniLM,0.68,0.474933385848999,0.20506661415100103,medium,MLOps Engineer,MLOps
+pair_082,generic_all_MiniLM,0.82,0.6654919385910034,0.15450806140899653,strong,Computer Vision Engineer,Computer Vision
+pair_083,generic_all_MiniLM,0.89,0.7120014429092407,0.1779985570907593,strong,Computer Vision Engineer,Computer Vision
+pair_084,generic_all_MiniLM,0.38,0.35116323828697205,0.02883676171302796,weak,MLOps Engineer,MLOps
+pair_085,generic_all_MiniLM,0.86,0.6823222637176514,0.17767773628234862,strong,Data Scientist,Analytics
+pair_086,generic_all_MiniLM,0.95,0.5929604768753052,0.3570395231246948,strong,Machine Learning Engineer,General AI
+pair_087,generic_all_MiniLM,0.61,0.5002287030220032,0.10977129697799681,medium,Machine Learning Engineer,General AI
+pair_088,generic_all_MiniLM,0.25,0.2997106909751892,0.04971069097518921,weak,AI Application Developer,GenAI Apps
+pair_089,generic_all_MiniLM,0.93,0.6625939607620239,0.2674060392379761,strong,Financial Data Scientist,Finance AI
+pair_090,generic_all_MiniLM,0.78,0.4841521084308624,0.2958478915691376,medium,NLP Engineer,LLM/NLP
+pair_091,generic_all_MiniLM,0.92,0.618105947971344,0.30189405202865605,strong,NLP Engineer,LLM/NLP
+pair_092,generic_all_MiniLM,0.86,0.5752968192100525,0.2847031807899475,strong,Machine Learning Engineer,General AI
+pair_093,generic_all_MiniLM,0.61,0.6050169467926025,0.004983053207397448,medium,Financial Data Scientist,Finance AI
+pair_094,generic_all_MiniLM,0.26,0.34616222977638245,0.08616222977638244,weak,NLP Engineer,LLM/NLP
+pair_095,generic_all_MiniLM,0.36,0.2944028675556183,0.0655971324443817,weak,Financial Data Scientist,Finance AI
+pair_096,generic_all_MiniLM,0.6,0.49394214153289795,0.10605785846710203,medium,NLP Engineer,LLM/NLP
+pair_097,generic_all_MiniLM,0.91,0.6497008800506592,0.26029911994934085,strong,AI Application Developer,GenAI Apps
+pair_098,generic_all_MiniLM,0.61,0.5638288259506226,0.04617117404937743,medium,Data Scientist,Analytics
+pair_099,generic_all_MiniLM,0.71,0.5729172229766846,0.1370827770233154,medium,Data Scientist,Analytics
+pair_100,generic_all_MiniLM,0.93,0.6427524089813232,0.2872475910186768,strong,AI Application Developer,GenAI Apps
+pair_101,generic_all_MiniLM,0.88,0.6662065982818604,0.21379340171813965,strong,Computer Vision Engineer,Computer Vision
+pair_102,generic_all_MiniLM,0.65,0.565062940120697,0.084937059879303,medium,Financial Data Scientist,Finance AI
+pair_103,generic_all_MiniLM,0.6,0.5580253601074219,0.0419746398925781,medium,Computer Vision Engineer,Computer Vision
+pair_104,generic_all_MiniLM,0.85,0.68716961145401,0.16283038854598997,strong,Computer Vision Engineer,Computer Vision
+pair_105,generic_all_MiniLM,0.94,0.6762688755989075,0.2637311244010925,strong,Data Scientist,Analytics
+pair_106,generic_all_MiniLM,0.85,0.6322095394134521,0.21779046058654783,strong,AI Application Developer,GenAI Apps
+pair_107,generic_all_MiniLM,0.91,0.6489315032958984,0.2610684967041016,strong,AI Application Developer,GenAI Apps
+pair_108,generic_all_MiniLM,0.63,0.4052741527557373,0.2247258472442627,medium,AI Application Developer,GenAI Apps
+pair_109,generic_all_MiniLM,0.35,0.1647110879421234,0.18528891205787656,weak,Healthcare AI Engineer,Healthcare AI
+pair_110,generic_all_MiniLM,0.34,0.32619234919548035,0.013807650804519678,weak,Computer Vision Engineer,Computer Vision
+pair_111,generic_all_MiniLM,0.2,0.27980366349220276,0.07980366349220275,weak,AI Application Developer,GenAI Apps
+pair_112,generic_all_MiniLM,0.62,0.5291194319725037,0.09088056802749633,medium,Financial Data Scientist,Finance AI
+pair_113,generic_all_MiniLM,0.84,0.645933985710144,0.19406601428985593,strong,AI Application Developer,GenAI Apps
+pair_114,generic_all_MiniLM,0.66,0.4170539081096649,0.24294609189033511,medium,AI Application Developer,GenAI Apps
+pair_115,generic_all_MiniLM,0.87,0.6795846223831177,0.19041537761688232,strong,AI Application Developer,GenAI Apps
+pair_116,generic_all_MiniLM,0.89,0.7002986669540405,0.18970133304595949,strong,Healthcare AI Engineer,Healthcare AI
+pair_117,generic_all_MiniLM,0.92,0.6134176254272461,0.30658237457275395,strong,Machine Learning Engineer,General AI
+pair_118,generic_all_MiniLM,0.56,0.5441975593566895,0.0158024406433106,medium,Healthcare AI Engineer,Healthcare AI
+pair_119,generic_all_MiniLM,0.94,0.6278696656227112,0.31213033437728877,strong,AI Application Developer,GenAI Apps
+pair_120,generic_all_MiniLM,0.69,0.46637845039367676,0.2236215496063232,medium,Machine Learning Engineer,General AI
+pair_121,generic_all_MiniLM,0.32,0.3544618487358093,0.03446184873580932,weak,MLOps Engineer,MLOps
+pair_122,generic_all_MiniLM,0.95,0.7363584041595459,0.21364159584045406,strong,Healthcare AI Engineer,Healthcare AI
+pair_123,generic_all_MiniLM,0.92,0.7332424521446228,0.18675754785537724,strong,Healthcare AI Engineer,Healthcare AI
+pair_124,generic_all_MiniLM,0.94,0.6002225279808044,0.3397774720191955,strong,NLP Engineer,LLM/NLP
+pair_125,generic_all_MiniLM,0.32,0.34403297305107117,0.02403297305107116,weak,NLP Engineer,LLM/NLP
+pair_126,generic_all_MiniLM,0.25,0.3827575147151947,0.1327575147151947,weak,Data Scientist,Analytics
+pair_127,generic_all_MiniLM,0.57,0.41888993978500366,0.1511100602149963,medium,AI Application Developer,GenAI Apps
+pair_128,generic_all_MiniLM,0.82,0.6813932657241821,0.13860673427581782,strong,Data Scientist,Analytics
+pair_129,generic_all_MiniLM,0.6,0.5923371315002441,0.007662868499755837,medium,Computer Vision Engineer,Computer Vision
+pair_130,generic_all_MiniLM,0.76,0.5072792768478394,0.25272072315216065,medium,NLP Engineer,LLM/NLP
+pair_131,generic_all_MiniLM,0.65,0.5631363391876221,0.08686366081237795,medium,MLOps Engineer,MLOps
+pair_132,generic_all_MiniLM,0.71,0.616803765296936,0.09319623470306393,medium,Financial Data Scientist,Finance AI
+pair_133,generic_all_MiniLM,0.26,0.2613811790943146,0.0013811790943145663,weak,Machine Learning Engineer,General AI
+pair_134,generic_all_MiniLM,0.74,0.5990493297576904,0.14095067024230956,medium,Financial Data Scientist,Finance AI
+pair_135,generic_all_MiniLM,0.43,0.2636851966381073,0.1663148033618927,weak,Machine Learning Engineer,General AI
+pair_136,generic_all_MiniLM,0.85,0.6994039416313171,0.15059605836868284,strong,Data Scientist,Analytics
+pair_137,generic_all_MiniLM,0.83,0.5484400987625122,0.28155990123748775,strong,Machine Learning Engineer,General AI
+pair_138,generic_all_MiniLM,0.66,0.5023093819618225,0.15769061803817752,medium,NLP Engineer,LLM/NLP
+pair_139,generic_all_MiniLM,0.83,0.6409878730773926,0.18901212692260738,strong,MLOps Engineer,MLOps
+pair_140,generic_all_MiniLM,0.92,0.5925081372261047,0.3274918627738953,strong,MLOps Engineer,MLOps
+pair_141,generic_all_MiniLM,0.83,0.6286667585372925,0.20133324146270748,strong,MLOps Engineer,MLOps
+pair_142,generic_all_MiniLM,0.72,0.4154675006866455,0.30453249931335447,medium,AI Application Developer,GenAI Apps
+pair_143,generic_all_MiniLM,0.92,0.7145792245864868,0.20542077541351322,strong,Healthcare AI Engineer,Healthcare AI
+pair_144,generic_all_MiniLM,0.92,0.5810650587081909,0.3389349412918091,strong,AI Application Developer,GenAI Apps
+pair_145,generic_all_MiniLM,0.89,0.6207211017608643,0.26927889823913576,strong,Machine Learning Engineer,General AI
+pair_146,generic_all_MiniLM,0.74,0.4818621575832367,0.2581378424167633,medium,Healthcare AI Engineer,Healthcare AI
+pair_147,generic_all_MiniLM,0.64,0.39727193117141724,0.24272806882858278,medium,Healthcare AI Engineer,Healthcare AI
+pair_148,generic_all_MiniLM,0.95,0.6705975532531738,0.2794024467468261,strong,AI Application Developer,GenAI Apps
+pair_149,generic_all_MiniLM,0.43,0.15290924906730652,0.2770907509326935,weak,Healthcare AI Engineer,Healthcare AI
+pair_150,generic_all_MiniLM,0.9,0.7385278940200806,0.16147210597991946,strong,Healthcare AI Engineer,Healthcare AI
+pair_001,full_fine_tuned,0.85,0.8913631439208984,0.04136314392089846,strong,Data Scientist,Analytics
+pair_002,full_fine_tuned,0.94,0.8766825199127197,0.06331748008728022,strong,Financial Data Scientist,Finance AI
+pair_003,full_fine_tuned,0.22,0.3334362208843231,0.11343622088432312,weak,Healthcare AI Engineer,Healthcare AI
+pair_004,full_fine_tuned,0.36,0.34063440561294556,0.01936559438705443,weak,Healthcare AI Engineer,Healthcare AI
+pair_005,full_fine_tuned,0.74,0.651868462562561,0.08813153743743896,medium,Data Scientist,Analytics
+pair_006,full_fine_tuned,0.9,0.9261105060577393,0.026110506057739236,strong,Computer Vision Engineer,Computer Vision
+pair_007,full_fine_tuned,0.64,0.67581707239151,0.035817072391509996,medium,Healthcare AI Engineer,Healthcare AI
+pair_008,full_fine_tuned,0.77,0.6494914889335632,0.12050851106643679,medium,AI Application Developer,GenAI Apps
+pair_009,full_fine_tuned,0.31,0.3474389314651489,0.03743893146514893,weak,Healthcare AI Engineer,Healthcare AI
+pair_010,full_fine_tuned,0.73,0.7780437469482422,0.048043746948242205,medium,Machine Learning Engineer,General AI
+pair_011,full_fine_tuned,0.61,0.6373809576034546,0.027380957603454603,medium,NLP Engineer,LLM/NLP
+pair_012,full_fine_tuned,0.91,0.8539953231811523,0.05600467681884769,strong,Data Scientist,Analytics
+pair_013,full_fine_tuned,0.78,0.7615817785263062,0.018418221473693874,medium,MLOps Engineer,MLOps
+pair_014,full_fine_tuned,0.94,0.8564279675483704,0.08357203245162959,strong,Data Scientist,Analytics
+pair_015,full_fine_tuned,0.86,0.7830823659896851,0.07691763401031493,strong,Data Scientist,Analytics
+pair_016,full_fine_tuned,0.95,0.9265522360801697,0.023447763919830278,strong,AI Application Developer,GenAI Apps
+pair_017,full_fine_tuned,0.16,0.238301619887352,0.07830161988735199,weak,Data Scientist,Analytics
+pair_018,full_fine_tuned,0.91,0.8183086514472961,0.09169134855270389,strong,Data Scientist,Analytics
+pair_019,full_fine_tuned,0.89,0.8451523780822754,0.04484762191772462,strong,Data Scientist,Analytics
+pair_020,full_fine_tuned,0.33,0.30031415820121765,0.029685841798782364,weak,Healthcare AI Engineer,Healthcare AI
+pair_021,full_fine_tuned,0.9,0.9048417806625366,0.004841780662536599,strong,Computer Vision Engineer,Computer Vision
+pair_022,full_fine_tuned,0.62,0.7001932263374329,0.08019322633743287,medium,Financial Data Scientist,Finance AI
+pair_023,full_fine_tuned,0.41,0.3380424678325653,0.07195753216743467,weak,Machine Learning Engineer,General AI
+pair_024,full_fine_tuned,0.82,0.9059644341468811,0.08596443414688115,strong,Machine Learning Engineer,General AI
+pair_025,full_fine_tuned,0.84,0.9134972095489502,0.07349720954895023,strong,MLOps Engineer,MLOps
+pair_026,full_fine_tuned,0.88,0.8989501595497131,0.01895015954971313,strong,Financial Data Scientist,Finance AI
+pair_027,full_fine_tuned,0.77,0.7263143062591553,0.043685693740844744,medium,Computer Vision Engineer,Computer Vision
+pair_028,full_fine_tuned,0.67,0.6587129831314087,0.011287016868591349,medium,NLP Engineer,LLM/NLP
+pair_029,full_fine_tuned,0.75,0.6616864800453186,0.0883135199546814,medium,NLP Engineer,LLM/NLP
+pair_030,full_fine_tuned,0.56,0.6202354431152344,0.06023544311523432,medium,Data Scientist,Analytics
+pair_031,full_fine_tuned,0.39,0.3242031931877136,0.06579680681228639,weak,MLOps Engineer,MLOps
+pair_032,full_fine_tuned,0.36,0.24930912256240845,0.11069087743759154,weak,Financial Data Scientist,Finance AI
+pair_033,full_fine_tuned,0.9,0.8960310220718384,0.003968977928161643,strong,MLOps Engineer,MLOps
+pair_034,full_fine_tuned,0.89,0.8784706592559814,0.011529340744018568,strong,Financial Data Scientist,Finance AI
+pair_035,full_fine_tuned,0.85,0.8857766389846802,0.0357766389846802,strong,Financial Data Scientist,Finance AI
+pair_036,full_fine_tuned,0.91,0.9053813815116882,0.004618618488311799,strong,Computer Vision Engineer,Computer Vision
+pair_037,full_fine_tuned,0.96,0.9090341329574585,0.05096586704254147,strong,MLOps Engineer,MLOps
+pair_038,full_fine_tuned,0.67,0.6954653263092041,0.02546532630920406,medium,Data Scientist,Analytics
+pair_039,full_fine_tuned,0.89,0.9388338327407837,0.04883383274078368,strong,Computer Vision Engineer,Computer Vision
+pair_040,full_fine_tuned,0.93,0.8912620544433594,0.038737945556640674,strong,Healthcare AI Engineer,Healthcare AI
+pair_041,full_fine_tuned,0.86,0.9108282327651978,0.05082823276519777,strong,Computer Vision Engineer,Computer Vision
+pair_042,full_fine_tuned,0.58,0.6468029618263245,0.0668029618263245,medium,Financial Data Scientist,Finance AI
+pair_043,full_fine_tuned,0.82,0.8550456166267395,0.03504561662673955,strong,MLOps Engineer,MLOps
+pair_044,full_fine_tuned,0.87,0.8866895437240601,0.016689543724060063,strong,NLP Engineer,LLM/NLP
+pair_045,full_fine_tuned,0.93,0.9142471551895142,0.01575284481048589,strong,Machine Learning Engineer,General AI
+pair_046,full_fine_tuned,0.59,0.7069395184516907,0.1169395184516907,medium,Financial Data Scientist,Finance AI
+pair_047,full_fine_tuned,0.57,0.6730998754501343,0.10309987545013433,medium,NLP Engineer,LLM/NLP
+pair_048,full_fine_tuned,0.2,0.3217199146747589,0.1217199146747589,weak,MLOps Engineer,MLOps
+pair_049,full_fine_tuned,0.72,0.6530327796936035,0.06696722030639646,medium,Healthcare AI Engineer,Healthcare AI
+pair_050,full_fine_tuned,0.89,0.8833385705947876,0.006661429405212416,strong,Healthcare AI Engineer,Healthcare AI
+pair_051,full_fine_tuned,0.84,0.8940960168838501,0.05409601688385013,strong,Financial Data Scientist,Finance AI
+pair_052,full_fine_tuned,0.23,0.2728692293167114,0.042869229316711416,weak,Financial Data Scientist,Finance AI
+pair_053,full_fine_tuned,0.18,0.2550432085990906,0.07504320859909058,weak,NLP Engineer,LLM/NLP
+pair_054,full_fine_tuned,0.58,0.6505231857299805,0.07052318572998051,medium,Data Scientist,Analytics
+pair_055,full_fine_tuned,0.4,0.30594420433044434,0.09405579566955569,weak,MLOps Engineer,MLOps
+pair_056,full_fine_tuned,0.32,0.23833170533180237,0.08166829466819764,weak,AI Application Developer,GenAI Apps
+pair_057,full_fine_tuned,0.41,0.356631338596344,0.05336866140365598,weak,MLOps Engineer,MLOps
+pair_058,full_fine_tuned,0.91,0.9428914785385132,0.03289147853851315,strong,AI Application Developer,GenAI Apps
+pair_059,full_fine_tuned,0.28,0.21048805117607117,0.06951194882392886,weak,AI Application Developer,GenAI Apps
+pair_060,full_fine_tuned,0.65,0.6393325328826904,0.010667467117309593,medium,Data Scientist,Analytics
+pair_061,full_fine_tuned,0.61,0.751388430595398,0.14138843059539796,medium,MLOps Engineer,MLOps
+pair_062,full_fine_tuned,0.45,0.3414034843444824,0.10859651565551759,weak,Machine Learning Engineer,General AI
+pair_063,full_fine_tuned,0.91,0.945290744304657,0.03529074430465695,strong,AI Application Developer,GenAI Apps
+pair_064,full_fine_tuned,0.6,0.6798285841941833,0.07982858419418337,medium,Healthcare AI Engineer,Healthcare AI
+pair_065,full_fine_tuned,0.77,0.7022667527198792,0.06773324728012087,medium,Computer Vision Engineer,Computer Vision
+pair_066,full_fine_tuned,0.95,0.9274700284004211,0.022529971599578813,strong,Computer Vision Engineer,Computer Vision
+pair_067,full_fine_tuned,0.64,0.7534299492835999,0.11342994928359984,medium,MLOps Engineer,MLOps
+pair_068,full_fine_tuned,0.77,0.7401254177093506,0.029874582290649432,medium,Financial Data Scientist,Finance AI
+pair_069,full_fine_tuned,0.85,0.915371835231781,0.06537183523178103,strong,Computer Vision Engineer,Computer Vision
+pair_070,full_fine_tuned,0.67,0.6693254709243774,0.0006745290756225986,medium,NLP Engineer,LLM/NLP
+pair_071,full_fine_tuned,0.89,0.8836091756820679,0.006390824317932142,strong,NLP Engineer,LLM/NLP
+pair_072,full_fine_tuned,0.74,0.7242518663406372,0.015748133659362784,medium,Data Scientist,Analytics
+pair_073,full_fine_tuned,0.69,0.6861623525619507,0.003837647438049263,medium,Financial Data Scientist,Finance AI
+pair_074,full_fine_tuned,0.65,0.649303674697876,0.0006963253021240456,medium,Data Scientist,Analytics
+pair_075,full_fine_tuned,0.95,0.9310064911842346,0.018993508815765336,strong,Healthcare AI Engineer,Healthcare AI
+pair_076,full_fine_tuned,0.66,0.684386134147644,0.024386134147644012,medium,Computer Vision Engineer,Computer Vision
+pair_077,full_fine_tuned,0.82,0.9028661251068115,0.08286612510681157,strong,Data Scientist,Analytics
+pair_078,full_fine_tuned,0.72,0.6893303394317627,0.030669660568237278,medium,NLP Engineer,LLM/NLP
+pair_079,full_fine_tuned,0.23,0.19208651781082153,0.03791348218917848,weak,Data Scientist,Analytics
+pair_080,full_fine_tuned,0.86,0.8451919555664062,0.014808044433593737,strong,Data Scientist,Analytics
+pair_081,full_fine_tuned,0.68,0.7356060743331909,0.05560607433319087,medium,MLOps Engineer,MLOps
+pair_082,full_fine_tuned,0.82,0.8904637098312378,0.07046370983123784,strong,Computer Vision Engineer,Computer Vision
+pair_083,full_fine_tuned,0.89,0.9259320497512817,0.035932049751281725,strong,Computer Vision Engineer,Computer Vision
+pair_084,full_fine_tuned,0.38,0.3543444871902466,0.025655512809753422,weak,MLOps Engineer,MLOps
+pair_085,full_fine_tuned,0.86,0.912452220916748,0.05245222091674806,strong,Data Scientist,Analytics
+pair_086,full_fine_tuned,0.95,0.8893553614616394,0.06064463853836055,strong,Machine Learning Engineer,General AI
+pair_087,full_fine_tuned,0.61,0.6966384649276733,0.08663846492767335,medium,Machine Learning Engineer,General AI
+pair_088,full_fine_tuned,0.25,0.24601155519485474,0.003988444805145264,weak,AI Application Developer,GenAI Apps
+pair_089,full_fine_tuned,0.93,0.8732017278671265,0.056798272132873584,strong,Financial Data Scientist,Finance AI
+pair_090,full_fine_tuned,0.78,0.7138034701347351,0.06619652986526492,medium,NLP Engineer,LLM/NLP
+pair_091,full_fine_tuned,0.92,0.886510968208313,0.03348903179168705,strong,NLP Engineer,LLM/NLP
+pair_092,full_fine_tuned,0.86,0.8787931799888611,0.018793179988861097,strong,Machine Learning Engineer,General AI
+pair_093,full_fine_tuned,0.61,0.6957607269287109,0.08576072692871095,medium,Financial Data Scientist,Finance AI
+pair_094,full_fine_tuned,0.26,0.2785889506340027,0.018588950634002677,weak,NLP Engineer,LLM/NLP
+pair_095,full_fine_tuned,0.36,0.2527139186859131,0.1072860813140869,weak,Financial Data Scientist,Finance AI
+pair_096,full_fine_tuned,0.6,0.6477184295654297,0.04771842956542971,medium,NLP Engineer,LLM/NLP
+pair_097,full_fine_tuned,0.91,0.9414278864860535,0.031427886486053436,strong,AI Application Developer,GenAI Apps
+pair_098,full_fine_tuned,0.61,0.6051225662231445,0.004877433776855455,medium,Data Scientist,Analytics
+pair_099,full_fine_tuned,0.71,0.6967319250106812,0.013268074989318812,medium,Data Scientist,Analytics
+pair_100,full_fine_tuned,0.93,0.9466204643249512,0.016620464324951123,strong,AI Application Developer,GenAI Apps
+pair_101,full_fine_tuned,0.88,0.8740278482437134,0.0059721517562866255,strong,Computer Vision Engineer,Computer Vision
+pair_102,full_fine_tuned,0.65,0.6153544783592224,0.03464552164077761,medium,Financial Data Scientist,Finance AI
+pair_103,full_fine_tuned,0.6,0.6777032613754272,0.07770326137542727,medium,Computer Vision Engineer,Computer Vision
+pair_104,full_fine_tuned,0.85,0.9298101663589478,0.07981016635894778,strong,Computer Vision Engineer,Computer Vision
+pair_105,full_fine_tuned,0.94,0.8428186178207397,0.0971813821792602,strong,Data Scientist,Analytics
+pair_106,full_fine_tuned,0.85,0.9354569315910339,0.08545693159103396,strong,AI Application Developer,GenAI Apps
+pair_107,full_fine_tuned,0.91,0.9239709973335266,0.01397099733352658,strong,AI Application Developer,GenAI Apps
+pair_108,full_fine_tuned,0.63,0.5479271411895752,0.08207285881042481,medium,AI Application Developer,GenAI Apps
+pair_109,full_fine_tuned,0.35,0.3539113998413086,0.003911399841308616,weak,Healthcare AI Engineer,Healthcare AI
+pair_110,full_fine_tuned,0.34,0.2803723216056824,0.05962767839431765,weak,Computer Vision Engineer,Computer Vision
+pair_111,full_fine_tuned,0.2,0.21250338852405548,0.01250338852405547,weak,AI Application Developer,GenAI Apps
+pair_112,full_fine_tuned,0.62,0.6024578809738159,0.017542119026184078,medium,Financial Data Scientist,Finance AI
+pair_113,full_fine_tuned,0.84,0.9081198573112488,0.06811985731124881,strong,AI Application Developer,GenAI Apps
+pair_114,full_fine_tuned,0.66,0.5790764093399048,0.08092359066009525,medium,AI Application Developer,GenAI Apps
+pair_115,full_fine_tuned,0.87,0.9393384456634521,0.06933844566345215,strong,AI Application Developer,GenAI Apps
+pair_116,full_fine_tuned,0.89,0.9194110035896301,0.029411003589630114,strong,Healthcare AI Engineer,Healthcare AI
+pair_117,full_fine_tuned,0.92,0.9248542785644531,0.004854278564453085,strong,Machine Learning Engineer,General AI
+pair_118,full_fine_tuned,0.56,0.7570602893829346,0.19706028938293452,medium,Healthcare AI Engineer,Healthcare AI
+pair_119,full_fine_tuned,0.94,0.928584098815918,0.011415901184081978,strong,AI Application Developer,GenAI Apps
+pair_120,full_fine_tuned,0.69,0.6783706545829773,0.011629345417022652,medium,Machine Learning Engineer,General AI
+pair_121,full_fine_tuned,0.32,0.3621446192264557,0.04214461922645568,weak,MLOps Engineer,MLOps
+pair_122,full_fine_tuned,0.95,0.9414277076721191,0.008572292327880815,strong,Healthcare AI Engineer,Healthcare AI
+pair_123,full_fine_tuned,0.92,0.9225112199783325,0.0025112199783324796,strong,Healthcare AI Engineer,Healthcare AI
+pair_124,full_fine_tuned,0.94,0.9149787425994873,0.025021257400512642,strong,NLP Engineer,LLM/NLP
+pair_125,full_fine_tuned,0.32,0.2594152092933655,0.06058479070663453,weak,NLP Engineer,LLM/NLP
+pair_126,full_fine_tuned,0.25,0.23118451237678528,0.01881548762321472,weak,Data Scientist,Analytics
+pair_127,full_fine_tuned,0.57,0.5994675755500793,0.029467575550079395,medium,AI Application Developer,GenAI Apps
+pair_128,full_fine_tuned,0.82,0.8557513952255249,0.03575139522552495,strong,Data Scientist,Analytics
+pair_129,full_fine_tuned,0.6,0.7430955767631531,0.1430955767631531,medium,Computer Vision Engineer,Computer Vision
+pair_130,full_fine_tuned,0.76,0.7140322923660278,0.04596770763397218,medium,NLP Engineer,LLM/NLP
+pair_131,full_fine_tuned,0.65,0.7704460620880127,0.12044606208801267,medium,MLOps Engineer,MLOps
+pair_132,full_fine_tuned,0.71,0.7231558561325073,0.01315585613250736,medium,Financial Data Scientist,Finance AI
+pair_133,full_fine_tuned,0.26,0.2933588922023773,0.03335889220237731,weak,Machine Learning Engineer,General AI
+pair_134,full_fine_tuned,0.74,0.6627139449119568,0.0772860550880432,medium,Financial Data Scientist,Finance AI
+pair_135,full_fine_tuned,0.43,0.319655179977417,0.110344820022583,weak,Machine Learning Engineer,General AI
+pair_136,full_fine_tuned,0.85,0.8575724363327026,0.007572436332702659,strong,Data Scientist,Analytics
+pair_137,full_fine_tuned,0.83,0.887702465057373,0.05770246505737309,strong,Machine Learning Engineer,General AI
+pair_138,full_fine_tuned,0.66,0.7038558721542358,0.04385587215423581,medium,NLP Engineer,LLM/NLP
+pair_139,full_fine_tuned,0.83,0.888648271560669,0.058648271560668985,strong,MLOps Engineer,MLOps
+pair_140,full_fine_tuned,0.92,0.9001439213752747,0.019856078624725382,strong,MLOps Engineer,MLOps
+pair_141,full_fine_tuned,0.83,0.9062391519546509,0.07623915195465092,strong,MLOps Engineer,MLOps
+pair_142,full_fine_tuned,0.72,0.5861575603485107,0.13384243965148923,medium,AI Application Developer,GenAI Apps
+pair_143,full_fine_tuned,0.92,0.9327833652496338,0.012783365249633749,strong,Healthcare AI Engineer,Healthcare AI
+pair_144,full_fine_tuned,0.92,0.8857806921005249,0.03421930789947514,strong,AI Application Developer,GenAI Apps
+pair_145,full_fine_tuned,0.89,0.9085800647735596,0.018580064773559557,strong,Machine Learning Engineer,General AI
+pair_146,full_fine_tuned,0.74,0.6678964495658875,0.07210355043411254,medium,Healthcare AI Engineer,Healthcare AI
+pair_147,full_fine_tuned,0.64,0.6367653012275696,0.0032346987724304332,medium,Healthcare AI Engineer,Healthcare AI
+pair_148,full_fine_tuned,0.95,0.9334115386009216,0.016588461399078325,strong,AI Application Developer,GenAI Apps
+pair_149,full_fine_tuned,0.43,0.33598142862319946,0.09401857137680053,weak,Healthcare AI Engineer,Healthcare AI
+pair_150,full_fine_tuned,0.9,0.9207140207290649,0.02071402072906492,strong,Healthcare AI Engineer,Healthcare AI
+pair_001,lora_peft,0.85,0.7233342528343201,0.1266657471656799,strong,Data Scientist,Analytics
+pair_002,lora_peft,0.94,0.6591836214065552,0.28081637859344477,strong,Financial Data Scientist,Finance AI
+pair_003,lora_peft,0.22,0.1578509509563446,0.0621490490436554,weak,Healthcare AI Engineer,Healthcare AI
+pair_004,lora_peft,0.36,0.1742181032896042,0.1857818967103958,weak,Healthcare AI Engineer,Healthcare AI
+pair_005,lora_peft,0.74,0.5675582885742188,0.17244171142578124,medium,Data Scientist,Analytics
+pair_006,lora_peft,0.9,0.6577820181846619,0.24221798181533816,strong,Computer Vision Engineer,Computer Vision
+pair_007,lora_peft,0.64,0.47448110580444336,0.16551889419555665,medium,Healthcare AI Engineer,Healthcare AI
+pair_008,lora_peft,0.77,0.42491966485977173,0.3450803351402283,medium,AI Application Developer,GenAI Apps
+pair_009,lora_peft,0.31,0.17703008651733398,0.132969913482666,weak,Healthcare AI Engineer,Healthcare AI
+pair_010,lora_peft,0.73,0.5453653335571289,0.18463466644287108,medium,Machine Learning Engineer,General AI
+pair_011,lora_peft,0.61,0.44365793466567993,0.16634206533432006,medium,NLP Engineer,LLM/NLP
+pair_012,lora_peft,0.91,0.7200743556022644,0.18992564439773563,strong,Data Scientist,Analytics
+pair_013,lora_peft,0.78,0.5120333433151245,0.2679666566848755,medium,MLOps Engineer,MLOps
+pair_014,lora_peft,0.94,0.6779188513755798,0.2620811486244201,strong,Data Scientist,Analytics
+pair_015,lora_peft,0.86,0.6461056470870972,0.21389435291290282,strong,Data Scientist,Analytics
+pair_016,lora_peft,0.95,0.6312782764434814,0.3187217235565185,strong,AI Application Developer,GenAI Apps
+pair_017,lora_peft,0.16,0.4033234417438507,0.2433234417438507,weak,Data Scientist,Analytics
+pair_018,lora_peft,0.91,0.6619886755943298,0.2480113244056702,strong,Data Scientist,Analytics
+pair_019,lora_peft,0.89,0.6799226999282837,0.21007730007171632,strong,Data Scientist,Analytics
+pair_020,lora_peft,0.33,0.13674584031105042,0.1932541596889496,weak,Healthcare AI Engineer,Healthcare AI
+pair_021,lora_peft,0.9,0.6992108225822449,0.20078917741775515,strong,Computer Vision Engineer,Computer Vision
+pair_022,lora_peft,0.62,0.5818745493888855,0.0381254506111145,medium,Financial Data Scientist,Finance AI
+pair_023,lora_peft,0.41,0.29103007912635803,0.11896992087364194,weak,Machine Learning Engineer,General AI
+pair_024,lora_peft,0.82,0.6250020861625671,0.1949979138374328,strong,Machine Learning Engineer,General AI
+pair_025,lora_peft,0.84,0.6459682583808899,0.19403174161911008,strong,MLOps Engineer,MLOps
+pair_026,lora_peft,0.88,0.6718132495880127,0.2081867504119873,strong,Financial Data Scientist,Finance AI
+pair_027,lora_peft,0.77,0.5671956539154053,0.20280434608459474,medium,Computer Vision Engineer,Computer Vision
+pair_028,lora_peft,0.67,0.4579722285270691,0.21202777147293095,medium,NLP Engineer,LLM/NLP
+pair_029,lora_peft,0.75,0.48351749777793884,0.26648250222206116,medium,NLP Engineer,LLM/NLP
+pair_030,lora_peft,0.56,0.5263204574584961,0.03367954254150396,medium,Data Scientist,Analytics
+pair_031,lora_peft,0.39,0.3279111981391907,0.06208880186080934,weak,MLOps Engineer,MLOps
+pair_032,lora_peft,0.36,0.27836766839027405,0.08163233160972594,weak,Financial Data Scientist,Finance AI
+pair_033,lora_peft,0.9,0.6312896013259888,0.26871039867401125,strong,MLOps Engineer,MLOps
+pair_034,lora_peft,0.89,0.6560169458389282,0.2339830541610718,strong,Financial Data Scientist,Finance AI
+pair_035,lora_peft,0.85,0.6623272895812988,0.18767271041870115,strong,Financial Data Scientist,Finance AI
+pair_036,lora_peft,0.91,0.7081245183944702,0.20187548160552982,strong,Computer Vision Engineer,Computer Vision
+pair_037,lora_peft,0.96,0.6402386426925659,0.31976135730743405,strong,MLOps Engineer,MLOps
+pair_038,lora_peft,0.67,0.5914840698242188,0.07851593017578129,medium,Data Scientist,Analytics
+pair_039,lora_peft,0.89,0.7064456939697266,0.18355430603027345,strong,Computer Vision Engineer,Computer Vision
+pair_040,lora_peft,0.93,0.6378329992294312,0.2921670007705689,strong,Healthcare AI Engineer,Healthcare AI
+pair_041,lora_peft,0.86,0.6954236030578613,0.16457639694213866,strong,Computer Vision Engineer,Computer Vision
+pair_042,lora_peft,0.58,0.5550732612609863,0.024926738739013632,medium,Financial Data Scientist,Finance AI
+pair_043,lora_peft,0.82,0.549555242061615,0.27044475793838496,strong,MLOps Engineer,MLOps
+pair_044,lora_peft,0.87,0.5137509703636169,0.35624902963638305,strong,NLP Engineer,LLM/NLP
+pair_045,lora_peft,0.93,0.6277658939361572,0.3022341060638428,strong,Machine Learning Engineer,General AI
+pair_046,lora_peft,0.59,0.5945930480957031,0.004593048095703156,medium,Financial Data Scientist,Finance AI
+pair_047,lora_peft,0.57,0.49522387981414795,0.074776120185852,medium,NLP Engineer,LLM/NLP
+pair_048,lora_peft,0.2,0.34938210248947144,0.14938210248947142,weak,MLOps Engineer,MLOps
+pair_049,lora_peft,0.72,0.45528098940849304,0.26471901059150693,medium,Healthcare AI Engineer,Healthcare AI
+pair_050,lora_peft,0.89,0.7218988537788391,0.1681011462211609,strong,Healthcare AI Engineer,Healthcare AI
+pair_051,lora_peft,0.84,0.6404067873954773,0.19959321260452267,strong,Financial Data Scientist,Finance AI
+pair_052,lora_peft,0.23,0.3169224262237549,0.08692242622375487,weak,Financial Data Scientist,Finance AI
+pair_053,lora_peft,0.18,0.3424098789691925,0.1624098789691925,weak,NLP Engineer,LLM/NLP
+pair_054,lora_peft,0.58,0.5603315830230713,0.01966841697692867,medium,Data Scientist,Analytics
+pair_055,lora_peft,0.4,0.32826101779937744,0.07173898220062258,weak,MLOps Engineer,MLOps
+pair_056,lora_peft,0.32,0.2988484799861908,0.02115152001380921,weak,AI Application Developer,GenAI Apps
+pair_057,lora_peft,0.41,0.33417344093322754,0.07582655906677244,weak,MLOps Engineer,MLOps
+pair_058,lora_peft,0.91,0.6876667737960815,0.2223332262039185,strong,AI Application Developer,GenAI Apps
+pair_059,lora_peft,0.28,0.28186237812042236,0.0018623781204223366,weak,AI Application Developer,GenAI Apps
+pair_060,lora_peft,0.65,0.5988507270812988,0.051149272918701194,medium,Data Scientist,Analytics
+pair_061,lora_peft,0.61,0.5294315814971924,0.0805684185028076,medium,MLOps Engineer,MLOps
+pair_062,lora_peft,0.45,0.2724950909614563,0.1775049090385437,weak,Machine Learning Engineer,General AI
+pair_063,lora_peft,0.91,0.6532506942749023,0.2567493057250977,strong,AI Application Developer,GenAI Apps
+pair_064,lora_peft,0.6,0.48261186480522156,0.11738813519477842,medium,Healthcare AI Engineer,Healthcare AI
+pair_065,lora_peft,0.77,0.5456230640411377,0.22437693595886232,medium,Computer Vision Engineer,Computer Vision
+pair_066,lora_peft,0.95,0.7069016695022583,0.24309833049774165,strong,Computer Vision Engineer,Computer Vision
+pair_067,lora_peft,0.64,0.5199741721153259,0.12002582788467409,medium,MLOps Engineer,MLOps
+pair_068,lora_peft,0.77,0.5944304466247559,0.17556955337524416,medium,Financial Data Scientist,Finance AI
+pair_069,lora_peft,0.85,0.7039476037025452,0.1460523962974548,strong,Computer Vision Engineer,Computer Vision
+pair_070,lora_peft,0.67,0.405392587184906,0.26460741281509403,medium,NLP Engineer,LLM/NLP
+pair_071,lora_peft,0.89,0.5929656028747559,0.29703439712524415,strong,NLP Engineer,LLM/NLP
+pair_072,lora_peft,0.74,0.6167559027671814,0.1232440972328186,medium,Data Scientist,Analytics
+pair_073,lora_peft,0.69,0.5732213258743286,0.11677867412567133,medium,Financial Data Scientist,Finance AI
+pair_074,lora_peft,0.65,0.5556460618972778,0.09435393810272219,medium,Data Scientist,Analytics
+pair_075,lora_peft,0.95,0.7474336624145508,0.20256633758544917,strong,Healthcare AI Engineer,Healthcare AI
+pair_076,lora_peft,0.66,0.5469675660133362,0.11303243398666385,medium,Computer Vision Engineer,Computer Vision
+pair_077,lora_peft,0.82,0.7321034669876099,0.08789653301239009,strong,Data Scientist,Analytics
+pair_078,lora_peft,0.72,0.4837731420993805,0.23622685790061948,medium,NLP Engineer,LLM/NLP
+pair_079,lora_peft,0.23,0.3659681975841522,0.1359681975841522,weak,Data Scientist,Analytics
+pair_080,lora_peft,0.86,0.625487208366394,0.23451279163360594,strong,Data Scientist,Analytics
+pair_081,lora_peft,0.68,0.474933385848999,0.20506661415100103,medium,MLOps Engineer,MLOps
+pair_082,lora_peft,0.82,0.6654919385910034,0.15450806140899653,strong,Computer Vision Engineer,Computer Vision
+pair_083,lora_peft,0.89,0.7120014429092407,0.1779985570907593,strong,Computer Vision Engineer,Computer Vision
+pair_084,lora_peft,0.38,0.35116323828697205,0.02883676171302796,weak,MLOps Engineer,MLOps
+pair_085,lora_peft,0.86,0.6823222637176514,0.17767773628234862,strong,Data Scientist,Analytics
+pair_086,lora_peft,0.95,0.5929604768753052,0.3570395231246948,strong,Machine Learning Engineer,General AI
+pair_087,lora_peft,0.61,0.5002287030220032,0.10977129697799681,medium,Machine Learning Engineer,General AI
+pair_088,lora_peft,0.25,0.2997106909751892,0.04971069097518921,weak,AI Application Developer,GenAI Apps
+pair_089,lora_peft,0.93,0.6625939607620239,0.2674060392379761,strong,Financial Data Scientist,Finance AI
+pair_090,lora_peft,0.78,0.4841521084308624,0.2958478915691376,medium,NLP Engineer,LLM/NLP
+pair_091,lora_peft,0.92,0.618105947971344,0.30189405202865605,strong,NLP Engineer,LLM/NLP
+pair_092,lora_peft,0.86,0.5752968192100525,0.2847031807899475,strong,Machine Learning Engineer,General AI
+pair_093,lora_peft,0.61,0.6050169467926025,0.004983053207397448,medium,Financial Data Scientist,Finance AI
+pair_094,lora_peft,0.26,0.34616222977638245,0.08616222977638244,weak,NLP Engineer,LLM/NLP
+pair_095,lora_peft,0.36,0.2944028675556183,0.0655971324443817,weak,Financial Data Scientist,Finance AI
+pair_096,lora_peft,0.6,0.49394214153289795,0.10605785846710203,medium,NLP Engineer,LLM/NLP
+pair_097,lora_peft,0.91,0.6497008800506592,0.26029911994934085,strong,AI Application Developer,GenAI Apps
+pair_098,lora_peft,0.61,0.5638288259506226,0.04617117404937743,medium,Data Scientist,Analytics
+pair_099,lora_peft,0.71,0.5729172229766846,0.1370827770233154,medium,Data Scientist,Analytics
+pair_100,lora_peft,0.93,0.6427524089813232,0.2872475910186768,strong,AI Application Developer,GenAI Apps
+pair_101,lora_peft,0.88,0.6662065982818604,0.21379340171813965,strong,Computer Vision Engineer,Computer Vision
+pair_102,lora_peft,0.65,0.565062940120697,0.084937059879303,medium,Financial Data Scientist,Finance AI
+pair_103,lora_peft,0.6,0.5580253601074219,0.0419746398925781,medium,Computer Vision Engineer,Computer Vision
+pair_104,lora_peft,0.85,0.68716961145401,0.16283038854598997,strong,Computer Vision Engineer,Computer Vision
+pair_105,lora_peft,0.94,0.6762688755989075,0.2637311244010925,strong,Data Scientist,Analytics
+pair_106,lora_peft,0.85,0.6322095394134521,0.21779046058654783,strong,AI Application Developer,GenAI Apps
+pair_107,lora_peft,0.91,0.6489315032958984,0.2610684967041016,strong,AI Application Developer,GenAI Apps
+pair_108,lora_peft,0.63,0.4052741527557373,0.2247258472442627,medium,AI Application Developer,GenAI Apps
+pair_109,lora_peft,0.35,0.1647110879421234,0.18528891205787656,weak,Healthcare AI Engineer,Healthcare AI
+pair_110,lora_peft,0.34,0.32619234919548035,0.013807650804519678,weak,Computer Vision Engineer,Computer Vision
+pair_111,lora_peft,0.2,0.27980366349220276,0.07980366349220275,weak,AI Application Developer,GenAI Apps
+pair_112,lora_peft,0.62,0.5291194319725037,0.09088056802749633,medium,Financial Data Scientist,Finance AI
+pair_113,lora_peft,0.84,0.645933985710144,0.19406601428985593,strong,AI Application Developer,GenAI Apps
+pair_114,lora_peft,0.66,0.4170539081096649,0.24294609189033511,medium,AI Application Developer,GenAI Apps
+pair_115,lora_peft,0.87,0.6795846223831177,0.19041537761688232,strong,AI Application Developer,GenAI Apps
+pair_116,lora_peft,0.89,0.7002986669540405,0.18970133304595949,strong,Healthcare AI Engineer,Healthcare AI
+pair_117,lora_peft,0.92,0.6134176254272461,0.30658237457275395,strong,Machine Learning Engineer,General AI
+pair_118,lora_peft,0.56,0.5441975593566895,0.0158024406433106,medium,Healthcare AI Engineer,Healthcare AI
+pair_119,lora_peft,0.94,0.6278696656227112,0.31213033437728877,strong,AI Application Developer,GenAI Apps
+pair_120,lora_peft,0.69,0.46637845039367676,0.2236215496063232,medium,Machine Learning Engineer,General AI
+pair_121,lora_peft,0.32,0.3544618487358093,0.03446184873580932,weak,MLOps Engineer,MLOps
+pair_122,lora_peft,0.95,0.7363584041595459,0.21364159584045406,strong,Healthcare AI Engineer,Healthcare AI
+pair_123,lora_peft,0.92,0.7332424521446228,0.18675754785537724,strong,Healthcare AI Engineer,Healthcare AI
+pair_124,lora_peft,0.94,0.6002225279808044,0.3397774720191955,strong,NLP Engineer,LLM/NLP
+pair_125,lora_peft,0.32,0.34403297305107117,0.02403297305107116,weak,NLP Engineer,LLM/NLP
+pair_126,lora_peft,0.25,0.3827575147151947,0.1327575147151947,weak,Data Scientist,Analytics
+pair_127,lora_peft,0.57,0.41888993978500366,0.1511100602149963,medium,AI Application Developer,GenAI Apps
+pair_128,lora_peft,0.82,0.6813932657241821,0.13860673427581782,strong,Data Scientist,Analytics
+pair_129,lora_peft,0.6,0.5923371315002441,0.007662868499755837,medium,Computer Vision Engineer,Computer Vision
+pair_130,lora_peft,0.76,0.5072792768478394,0.25272072315216065,medium,NLP Engineer,LLM/NLP
+pair_131,lora_peft,0.65,0.5631363391876221,0.08686366081237795,medium,MLOps Engineer,MLOps
+pair_132,lora_peft,0.71,0.616803765296936,0.09319623470306393,medium,Financial Data Scientist,Finance AI
+pair_133,lora_peft,0.26,0.2613811790943146,0.0013811790943145663,weak,Machine Learning Engineer,General AI
+pair_134,lora_peft,0.74,0.5990493297576904,0.14095067024230956,medium,Financial Data Scientist,Finance AI
+pair_135,lora_peft,0.43,0.2636851966381073,0.1663148033618927,weak,Machine Learning Engineer,General AI
+pair_136,lora_peft,0.85,0.6994039416313171,0.15059605836868284,strong,Data Scientist,Analytics
+pair_137,lora_peft,0.83,0.5484400987625122,0.28155990123748775,strong,Machine Learning Engineer,General AI
+pair_138,lora_peft,0.66,0.5023093819618225,0.15769061803817752,medium,NLP Engineer,LLM/NLP
+pair_139,lora_peft,0.83,0.6409878730773926,0.18901212692260738,strong,MLOps Engineer,MLOps
+pair_140,lora_peft,0.92,0.5925081372261047,0.3274918627738953,strong,MLOps Engineer,MLOps
+pair_141,lora_peft,0.83,0.6286667585372925,0.20133324146270748,strong,MLOps Engineer,MLOps
+pair_142,lora_peft,0.72,0.4154675006866455,0.30453249931335447,medium,AI Application Developer,GenAI Apps
+pair_143,lora_peft,0.92,0.7145792245864868,0.20542077541351322,strong,Healthcare AI Engineer,Healthcare AI
+pair_144,lora_peft,0.92,0.5810650587081909,0.3389349412918091,strong,AI Application Developer,GenAI Apps
+pair_145,lora_peft,0.89,0.6207211017608643,0.26927889823913576,strong,Machine Learning Engineer,General AI
+pair_146,lora_peft,0.74,0.4818621575832367,0.2581378424167633,medium,Healthcare AI Engineer,Healthcare AI
+pair_147,lora_peft,0.64,0.39727193117141724,0.24272806882858278,medium,Healthcare AI Engineer,Healthcare AI
+pair_148,lora_peft,0.95,0.6705975532531738,0.2794024467468261,strong,AI Application Developer,GenAI Apps
+pair_149,lora_peft,0.43,0.15290924906730652,0.2770907509326935,weak,Healthcare AI Engineer,Healthcare AI
+pair_150,lora_peft,0.9,0.7385278940200806,0.16147210597991946,strong,Healthcare AI Engineer,Healthcare AI

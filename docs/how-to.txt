@@ -11,6 +11,11 @@ cd ml
 pip install -U accelerate transformers datasets sentence-transformers
 python train_matcher.py
 
+- Additions for LoRA (PEFT) per professor's recommendation
+cd ml
+pip install peft
+python train_matcher_lora.py
+
 - Then, run the app
 
 pip install -r requirements.txt
@@ -22,3 +27,12 @@ pip install transformers==4.46.3
 pip install sentence-transformers==3.3.1
 
 streamlit run app.py
+
+- Reports
+- Individual resume comparison statistics using all three models
+cd ml
+pip install openpyxl
+python evaluate_models.py
+
+- Batch resume comparison statistics using all three models
+

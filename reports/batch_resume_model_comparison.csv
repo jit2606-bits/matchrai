@@ -1,0 +1,49 @@
+resume_file,job_file,model,semantic_score,ats_skill_overlap,final_score,matched_skills,missing_skills,cgpa,years_experience,inference_time_sec
+resume_003.pdf,jd_001.txt,generic,0.6298,0.4091,0.5636,"git, linux, machine learning, numpy, pandas, python, scikit-learn, sql, streamlit","aws, azure, deep learning, docker, fastapi, flask, gcp, github, nlp, pytorch, rag, rest, tensorflow",7.6,,0.0706
+resume_003.pdf,jd_001.txt,full_fine_tuned,0.7381,0.4091,0.6394,"git, linux, machine learning, numpy, pandas, python, scikit-learn, sql, streamlit","aws, azure, deep learning, docker, fastapi, flask, gcp, github, nlp, pytorch, rag, rest, tensorflow",7.6,,0.118
+resume_003.pdf,jd_001.txt,lora_peft,0.6298,0.4091,0.5636,"git, linux, machine learning, numpy, pandas, python, scikit-learn, sql, streamlit","aws, azure, deep learning, docker, fastapi, flask, gcp, github, nlp, pytorch, rag, rest, tensorflow",7.6,,0.0591
+resume_003.pdf,jd_002.txt,generic,0.6598,0.4375,0.5931,"machine learning, numpy, pandas, python, scikit-learn, sql, streamlit","aws, azure, deep learning, gcp, nlp, pytorch, spark, statistics, tensorflow",7.6,,0.0733
+resume_003.pdf,jd_002.txt,full_fine_tuned,0.7696,0.4375,0.67,"machine learning, numpy, pandas, python, scikit-learn, sql, streamlit","aws, azure, deep learning, gcp, nlp, pytorch, spark, statistics, tensorflow",7.6,,0.0419
+resume_003.pdf,jd_002.txt,lora_peft,0.6598,0.4375,0.5931,"machine learning, numpy, pandas, python, scikit-learn, sql, streamlit","aws, azure, deep learning, gcp, nlp, pytorch, spark, statistics, tensorflow",7.6,,0.0403
+resume_003.pdf,jd_003.txt,generic,0.5133,0.8333,0.6093,"git, java, linux, python, sql",c++,7.6,,0.0808
+resume_003.pdf,jd_003.txt,full_fine_tuned,0.6434,0.8333,0.7004,"git, java, linux, python, sql",c++,7.6,,0.0318
+resume_003.pdf,jd_003.txt,lora_peft,0.5133,0.8333,0.6093,"git, java, linux, python, sql",c++,7.6,,0.0393
+resume_003.pdf,jd_004.txt,generic,0.5467,0.2941,0.4709,"git, java, linux, python, sql","aws, azure, ci/cd, django, docker, fastapi, flask, gcp, github, mysql, postgresql, rest",7.6,,0.0663
+resume_003.pdf,jd_004.txt,full_fine_tuned,0.6316,0.2941,0.5304,"git, java, linux, python, sql","aws, azure, ci/cd, django, docker, fastapi, flask, gcp, github, mysql, postgresql, rest",7.6,,0.0346
+resume_003.pdf,jd_004.txt,lora_peft,0.5467,0.2941,0.4709,"git, java, linux, python, sql","aws, azure, ci/cd, django, docker, fastapi, flask, gcp, github, mysql, postgresql, rest",7.6,,0.0347
+resume_001.docx,jd_001.txt,generic,0.7613,0.8636,0.792,"aws, deep learning, docker, fastapi, flask, git, github, linux, machine learning, nlp, numpy, pandas, python, pytorch, rest, scikit-learn, sql, streamlit, tensorflow","azure, gcp, rag",8.7/10,1.0,0.0379
+resume_001.docx,jd_001.txt,full_fine_tuned,0.8706,0.8636,0.8685,"aws, deep learning, docker, fastapi, flask, git, github, linux, machine learning, nlp, numpy, pandas, python, pytorch, rest, scikit-learn, sql, streamlit, tensorflow","azure, gcp, rag",8.7/10,1.0,0.0733
+resume_001.docx,jd_001.txt,lora_peft,0.7613,0.8636,0.792,"aws, deep learning, docker, fastapi, flask, git, github, linux, machine learning, nlp, numpy, pandas, python, pytorch, rest, scikit-learn, sql, streamlit, tensorflow","azure, gcp, rag",8.7/10,1.0,0.0363
+resume_001.docx,jd_002.txt,generic,0.6704,0.75,0.6943,"aws, deep learning, machine learning, nlp, numpy, pandas, python, pytorch, scikit-learn, sql, streamlit, tensorflow","azure, gcp, spark, statistics",8.7/10,1.0,0.1009
+resume_001.docx,jd_002.txt,full_fine_tuned,0.7934,0.75,0.7804,"aws, deep learning, machine learning, nlp, numpy, pandas, python, pytorch, scikit-learn, sql, streamlit, tensorflow","azure, gcp, spark, statistics",8.7/10,1.0,0.0573
+resume_001.docx,jd_002.txt,lora_peft,0.6704,0.75,0.6943,"aws, deep learning, machine learning, nlp, numpy, pandas, python, pytorch, scikit-learn, sql, streamlit, tensorflow","azure, gcp, spark, statistics",8.7/10,1.0,0.0359
+resume_001.docx,jd_003.txt,generic,0.4419,0.6667,0.5093,"git, linux, python, sql","c++, java",8.7/10,1.0,0.0845
+resume_001.docx,jd_003.txt,full_fine_tuned,0.6106,0.6667,0.6274,"git, linux, python, sql","c++, java",8.7/10,1.0,0.0373
+resume_001.docx,jd_003.txt,lora_peft,0.4419,0.6667,0.5093,"git, linux, python, sql","c++, java",8.7/10,1.0,0.0476
+resume_001.docx,jd_004.txt,generic,0.6225,0.5882,0.6122,"aws, docker, fastapi, flask, git, github, linux, python, rest, sql","azure, ci/cd, django, gcp, java, mysql, postgresql",8.7/10,1.0,0.069
+resume_001.docx,jd_004.txt,full_fine_tuned,0.7786,0.5882,0.7215,"aws, docker, fastapi, flask, git, github, linux, python, rest, sql","azure, ci/cd, django, gcp, java, mysql, postgresql",8.7/10,1.0,0.0365
+resume_001.docx,jd_004.txt,lora_peft,0.6225,0.5882,0.6122,"aws, docker, fastapi, flask, git, github, linux, python, rest, sql","azure, ci/cd, django, gcp, java, mysql, postgresql",8.7/10,1.0,0.049
+resume_002.docx,jd_001.txt,generic,0.405,0.4091,0.4062,"aws, azure, deep learning, gcp, github, nlp, python, rest, streamlit","docker, fastapi, flask, git, linux, machine learning, numpy, pandas, pytorch, rag, scikit-learn, sql, tensorflow",Not detected,,0.0437
+resume_002.docx,jd_001.txt,full_fine_tuned,0.6068,0.4091,0.5475,"aws, azure, deep learning, gcp, github, nlp, python, rest, streamlit","docker, fastapi, flask, git, linux, machine learning, numpy, pandas, pytorch, rag, scikit-learn, sql, tensorflow",Not detected,,0.0466
+resume_002.docx,jd_001.txt,lora_peft,0.405,0.4091,0.4062,"aws, azure, deep learning, gcp, github, nlp, python, rest, streamlit","docker, fastapi, flask, git, linux, machine learning, numpy, pandas, pytorch, rag, scikit-learn, sql, tensorflow",Not detected,,0.074
+resume_002.docx,jd_002.txt,generic,0.35,0.4375,0.3763,"aws, azure, deep learning, gcp, nlp, python, streamlit","machine learning, numpy, pandas, pytorch, scikit-learn, spark, sql, statistics, tensorflow",Not detected,,0.0445
+resume_002.docx,jd_002.txt,full_fine_tuned,0.5072,0.4375,0.4863,"aws, azure, deep learning, gcp, nlp, python, streamlit","machine learning, numpy, pandas, pytorch, scikit-learn, spark, sql, statistics, tensorflow",Not detected,,0.0336
+resume_002.docx,jd_002.txt,lora_peft,0.35,0.4375,0.3763,"aws, azure, deep learning, gcp, nlp, python, streamlit","machine learning, numpy, pandas, pytorch, scikit-learn, spark, sql, statistics, tensorflow",Not detected,,0.0532
+resume_002.docx,jd_003.txt,generic,0.3361,0.1667,0.2853,python,"c++, git, java, linux, sql",Not detected,,0.0596
+resume_002.docx,jd_003.txt,full_fine_tuned,0.5106,0.1667,0.4074,python,"c++, git, java, linux, sql",Not detected,,0.0331
+resume_002.docx,jd_003.txt,lora_peft,0.3361,0.1667,0.2853,python,"c++, git, java, linux, sql",Not detected,,0.0462
+resume_002.docx,jd_004.txt,generic,0.3708,0.4118,0.3831,"aws, azure, gcp, github, postgresql, python, rest","ci/cd, django, docker, fastapi, flask, git, java, linux, mysql, sql",Not detected,,0.0482
+resume_002.docx,jd_004.txt,full_fine_tuned,0.5352,0.4118,0.4982,"aws, azure, gcp, github, postgresql, python, rest","ci/cd, django, docker, fastapi, flask, git, java, linux, mysql, sql",Not detected,,0.0342
+resume_002.docx,jd_004.txt,lora_peft,0.3708,0.4118,0.3831,"aws, azure, gcp, github, postgresql, python, rest","ci/cd, django, docker, fastapi, flask, git, java, linux, mysql, sql",Not detected,,0.0681
+resume_004.docx,jd_001.txt,generic,0.7349,0.8182,0.7599,"deep learning, docker, fastapi, flask, git, github, linux, machine learning, nlp, numpy, pandas, python, pytorch, rest, scikit-learn, sql, streamlit, tensorflow","aws, azure, gcp, rag",8.5/10,,0.041
+resume_004.docx,jd_001.txt,full_fine_tuned,0.8135,0.8182,0.8149,"deep learning, docker, fastapi, flask, git, github, linux, machine learning, nlp, numpy, pandas, python, pytorch, rest, scikit-learn, sql, streamlit, tensorflow","aws, azure, gcp, rag",8.5/10,,0.035
+resume_004.docx,jd_001.txt,lora_peft,0.7349,0.8182,0.7599,"deep learning, docker, fastapi, flask, git, github, linux, machine learning, nlp, numpy, pandas, python, pytorch, rest, scikit-learn, sql, streamlit, tensorflow","aws, azure, gcp, rag",8.5/10,,0.0356
+resume_004.docx,jd_002.txt,generic,0.7162,0.6875,0.7076,"deep learning, machine learning, nlp, numpy, pandas, python, pytorch, scikit-learn, sql, streamlit, tensorflow","aws, azure, gcp, spark, statistics",8.5/10,,0.1085
+resume_004.docx,jd_002.txt,full_fine_tuned,0.8046,0.6875,0.7694,"deep learning, machine learning, nlp, numpy, pandas, python, pytorch, scikit-learn, sql, streamlit, tensorflow","aws, azure, gcp, spark, statistics",8.5/10,,0.0317
+resume_004.docx,jd_002.txt,lora_peft,0.7162,0.6875,0.7076,"deep learning, machine learning, nlp, numpy, pandas, python, pytorch, scikit-learn, sql, streamlit, tensorflow","aws, azure, gcp, spark, statistics",8.5/10,,0.035
+resume_004.docx,jd_003.txt,generic,0.5089,1.0,0.6562,"c++, git, java, linux, python, sql",,8.5/10,,0.0909
+resume_004.docx,jd_003.txt,full_fine_tuned,0.6159,1.0,0.7311,"c++, git, java, linux, python, sql",,8.5/10,,0.0279
+resume_004.docx,jd_003.txt,lora_peft,0.5089,1.0,0.6562,"c++, git, java, linux, python, sql",,8.5/10,,0.0314
+resume_004.docx,jd_004.txt,generic,0.6088,0.7059,0.6379,"docker, fastapi, flask, git, github, java, linux, mysql, postgresql, python, rest, sql","aws, azure, ci/cd, django, gcp",8.5/10,,0.0758
+resume_004.docx,jd_004.txt,full_fine_tuned,0.7077,0.7059,0.7072,"docker, fastapi, flask, git, github, java, linux, mysql, postgresql, python, rest, sql","aws, azure, ci/cd, django, gcp",8.5/10,,0.0385
+resume_004.docx,jd_004.txt,lora_peft,0.6088,0.7059,0.6379,"docker, fastapi, flask, git, github, java, linux, mysql, postgresql, python, rest, sql","aws, azure, ci/cd, django, gcp",8.5/10,,0.0518

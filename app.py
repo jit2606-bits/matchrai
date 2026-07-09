@@ -4,6 +4,7 @@ from pathlib import Path
 
 import streamlit as st
 
+from ml.guardrails import guardrail_check
 from ml.skills import extract_skills
 from ml.scoring import ats_skill_overlap
 from ml.parsing import parse_resume, parse_job_description
@@ -56,7 +57,39 @@ if run:
     parsed = parse_resume(tmp_path)
     jd_clean = parse_job_description(jd_text)
 
-    # phase 3
+    # Guardrails code
+    allowed, message = guardrail_check(parsed.raw_text, jd_clean)
+
+    #if not allowed:
+    #    st.error(message)
+    #    st.stop()
+    
+    if not allowed:
+        st.warning("Out-of-scope request detected.")
+        st.info(message)
+        st.stop()
+
+        st.error("Request rejected by domain guardrails.")
+        st.info(message)
+
+        st.markdown("""
+        **Supported inputs include:**
+        - Resume (PDF or DOCX)
+        - Job Description
+        - Resume vs Job Description matching
+        - ATS score
+        - Skill gap analysis
+
+        **Unsupported inputs include:**
+        - Weather
+        - Politics
+        - Sports
+        - Stock prices
+        - Medical advice
+        - General conversation
+        """)
+
+    st.stop()
     # -------------------------------
     # Extract skills FIRST
     # -------------------------------

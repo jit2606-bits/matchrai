@@ -4,7 +4,7 @@ from typing import Optional, Tuple, Dict, Any, List
 import numpy as np
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
-from utils import tokenize_simple
+from .utils import tokenize_simple
 
 
 # adding function for phase3 to determine ATS skill overlap

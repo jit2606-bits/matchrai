@@ -6,7 +6,7 @@ import re
 import pdfplumber
 from docx import Document
 
-from utils import normalize_text
+from .utils import normalize_text
 
 @dataclass
 class ParsedResume:

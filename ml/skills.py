@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import List, Set, Dict
 import re
 
-from utils import load_lines, normalize_text
+from .utils import load_lines, normalize_text
 
 def build_skill_taxonomy(path: str) -> List[str]:
     skills = load_lines(path)

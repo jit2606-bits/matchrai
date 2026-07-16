@@ -64,32 +64,35 @@ if run:
     #    st.error(message)
     #    st.stop()
     
-    if not allowed:
-        st.warning("Out-of-scope request detected.")
-        st.info(message)
-        st.stop()
+    allowed, message = guardrail_check(parsed.raw_text, jd_clean)
 
+    if not allowed:
         st.error("Request rejected by domain guardrails.")
         st.info(message)
 
         st.markdown("""
         **Supported inputs include:**
-        - Resume (PDF or DOCX)
-        - Job Description
-        - Resume vs Job Description matching
-        - ATS score
-        - Skill gap analysis
+        - Resume in PDF or DOCX format
+        - A complete job description
+        - Resume-to-job matching
+        - ATS skill-overlap analysis
+        - Skill-gap analysis
 
         **Unsupported inputs include:**
-        - Weather
-        - Politics
-        - Sports
-        - Stock prices
+        - General questions unrelated to employment
+        - Weather questions
+        - Political questions
+        - Sports scores
         - Medical advice
-        - General conversation
         """)
 
-    st.stop()
+        if show_raw:
+            with st.expander("Debug extracted input"):
+                st.write("Resume word count:", len(parsed.raw_text.split()))
+                st.write("Job-description word count:", len(jd_clean.split()))
+                st.text(parsed.raw_text[:2000])
+
+        st.stop()
     # -------------------------------
     # Extract skills FIRST
     # -------------------------------
@@ -125,18 +128,18 @@ if run:
     
     scores_full = compute_match(
     resume_text=parsed.raw_text,
-    jd_text=jd_text,
+    jd_text=jd_clean,
     years_exp=parsed.years_experience_estimate,
-    fresher_mode=True,
+    fresher_mode=fresher_mode,
     ats_override=ats2,
     model_type="full"
     )
 
     scores_lora = compute_match(
     resume_text=parsed.raw_text,
-    jd_text=jd_text,
+    jd_text=jd_clean,
     years_exp=parsed.years_experience_estimate,
-    fresher_mode=True,
+    fresher_mode=fresher_mode,
     ats_override=ats2,
     model_type="lora"
     )

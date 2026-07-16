@@ -1,62 +1,110 @@
-import re
+from __future__ import annotations
 
-RESUME_JD_KEYWORDS = {
-    "resume", "cv", "job description", "jd", "skills", "experience",
-    "education", "projects", "certifications", "candidate", "role",
-    "responsibilities", "requirements", "qualifications", "ats",
-    "match score", "semantic similarity", "missing skills",
-    "matched skills", "hiring", "recruiter", "job posting"
+
+RESUME_SIGNALS = {
+    "education",
+    "experience",
+    "work experience",
+    "employment",
+    "skills",
+    "technical skills",
+    "projects",
+    "certifications",
+    "professional summary",
+    "objective",
+    "internship",
+    "university",
+    "college",
+    "degree",
 }
 
-OUT_OF_SCOPE_KEYWORDS = {
-    "weather", "temperature", "rain", "snow", "storm",
-    "politics", "election", "president", "senate", "congress",
-    "sports", "nba", "nfl", "mlb", "soccer", "cricket",
-    "stock price", "crypto", "bitcoin",
-    "medical advice", "diagnosis", "medicine",
-    "recipe", "movie", "celebrity"
+JD_SIGNALS = {
+    "job title",
+    "job overview",
+    "responsibilities",
+    "requirements",
+    "qualifications",
+    "required skills",
+    "preferred skills",
+    "preferred qualifications",
+    "minimum qualifications",
+    "education",
+    "experience level",
+    "about the role",
+    "what you will do",
+    "years of experience",
 }
 
-def is_resume_matching_task(resume_text: str, jd_text: str) -> bool:
-    combined = f"{resume_text} {jd_text}".lower()
-
-    resume_signals = [
-        "education", "experience", "skills", "projects",
-        "certifications", "technical skills", "work experience"
-    ]
-
-    jd_signals = [
-        "requirements", "responsibilities", "qualifications",
-        "job description", "role", "preferred qualifications",
-        "minimum qualifications"
-    ]
-
-    has_resume_signal = any(s in combined for s in resume_signals)
-    has_jd_signal = any(s in combined for s in jd_signals)
-
-    return has_resume_signal and has_jd_signal
+GENERAL_QUESTION_SIGNALS = {
+    "what is the weather",
+    "weather today",
+    "who is the president",
+    "latest election",
+    "sports score",
+    "who won the game",
+    "stock price today",
+    "tell me a recipe",
+    "medical diagnosis",
+}
 
 
-def detect_out_of_scope(text: str) -> bool:
-    low = text.lower()
-    return any(keyword in low for keyword in OUT_OF_SCOPE_KEYWORDS)
+def count_signals(text: str, signals: set[str]) -> int:
+    normalized = " ".join(text.lower().split())
+    return sum(1 for signal in signals if signal in normalized)
 
 
-def guardrail_check(resume_text: str, jd_text: str):
-    combined = f"{resume_text} {jd_text}"
+def looks_like_general_question(text: str) -> bool:
+    normalized = " ".join(text.lower().split())
+    return any(signal in normalized for signal in GENERAL_QUESTION_SIGNALS)
 
-    if detect_out_of_scope(combined):
+
+def guardrail_check(
+    resume_text: str,
+    jd_text: str
+) -> tuple[bool, str]:
+
+    resume_text = resume_text.strip()
+    jd_text = jd_text.strip()
+
+    if not resume_text:
+        return False, "No readable resume text was extracted."
+
+    if not jd_text:
+        return False, "The job description is empty."
+
+    if len(resume_text.split()) < 30:
         return False, (
-            "This application is designed only for resume-to-job-description matching. "
-            "It does not answer general questions about weather, politics, sports, finance, "
-            "medical topics, or unrelated subjects. Please upload a resume and paste a job description."
+            "The uploaded document contains too little readable text "
+            "to be evaluated as a resume."
         )
 
-    if not is_resume_matching_task(resume_text, jd_text):
+    if len(jd_text.split()) < 20:
         return False, (
-            "The provided input does not look like a valid resume and job description pair. "
-            "Please upload a resume and paste a job description containing role requirements, "
-            "responsibilities, qualifications, or skills."
+            "The job description is too short. Please paste the complete posting."
+        )
+
+    # Check only the JD input for a direct unrelated question.
+    # Do not blacklist industry words in the resume.
+    if looks_like_general_question(jd_text):
+        return False, (
+            "The entered text appears to be a general question rather than "
+            "a job description."
+        )
+
+    resume_signal_count = count_signals(resume_text, RESUME_SIGNALS)
+    jd_signal_count = count_signals(jd_text, JD_SIGNALS)
+
+    if resume_signal_count < 1:
+        return False, (
+            "The uploaded document does not appear to contain common resume "
+            "sections such as education, experience, skills, or projects."
+        )
+
+    if jd_signal_count < 1:
+        return False, (
+            "The entered text does not appear to contain job-description "
+            "elements such as responsibilities, required skills, education, "
+            "qualifications, or job overview."
         )
 
     return True, "Input accepted."

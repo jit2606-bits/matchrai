@@ -3,9 +3,9 @@ import time
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from parsing import parse_resume, parse_job_description
-from skills import build_skill_taxonomy, extract_skills, keyword_gaps
-from scoring import ats_skill_overlap
+from .parsing import parse_resume, parse_job_description
+from .skills import build_skill_taxonomy, extract_skills, keyword_gaps
+from .scoring import ats_skill_overlap
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 

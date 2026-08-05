@@ -1,7 +1,7 @@
 from __future__ import annotations
 from typing import List, Set, Dict
 import re
-
+# use relative imports for files in the ml directory
 from .utils import load_lines, normalize_text
 
 def build_skill_taxonomy(path: str) -> List[str]:

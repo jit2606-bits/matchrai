@@ -1,0 +1,4 @@
+model,num_examples,mae,rmse,pearson_corr,spearman_corr,avg_label,avg_prediction,load_time_sec,inference_time_sec,avg_inference_per_pair_sec,model_size_mb
+generic_all_MiniLM,150,0.1764,0.1985,0.8792,0.8388,0.6961,0.5355,1.5594,2.8024,0.018683,0.0
+full_fine_tuned,150,0.0512,0.0659,0.96,0.8933,0.6961,0.6994,0.0741,2.8496,0.018997,87.58
+lora_peft,150,0.1764,0.1985,0.8792,0.8388,0.6961,0.5355,0.3172,3.7033,0.024689,5.74

@@ -1,0 +1,87 @@
+AI / Machine Learning Engineer (Entry-Level / Fresher)
+
+Job Title: AI / Machine Learning Engineer
+Location: Bangalore, India
+Experience Level: 0–2 years (Freshers welcome)
+
+Job Overview
+
+We are looking for a highly motivated AI / Machine Learning Engineer to join our engineering team. The candidate will work on developing machine learning models, building data pipelines, and deploying AI solutions for real-world applications. Fresh graduates with strong academic projects and hands-on experience are encouraged to apply.
+
+Responsibilities
+
+Develop and deploy machine learning models using Python
+
+Perform data preprocessing, feature engineering, and model evaluation
+
+Build and optimize NLP and deep learning models
+
+Implement REST APIs using FastAPI or Flask
+
+Work with large datasets using Pandas and NumPy
+
+Collaborate with engineering teams to deploy models into production
+
+Use Git for version control and collaboration
+
+Build interactive dashboards using Streamlit or similar tools
+
+Required Skills
+
+Strong programming skills in Python
+
+Knowledge of machine learning algorithms
+
+Experience with libraries such as:
+
+scikit-learn
+
+pandas
+
+numpy
+
+pytorch or tensorflow
+
+Understanding of NLP concepts
+
+Experience with Git and GitHub
+
+Knowledge of SQL and relational databases
+
+Familiarity with Linux environment
+
+Preferred Skills (Optional but beneficial)
+
+Experience with LLMs or RAG pipelines
+
+Knowledge of cloud platforms (AWS, Azure, or GCP)
+
+Experience with Docker
+
+Knowledge of FastAPI or Flask
+
+Familiarity with Streamlit
+
+Education
+
+Bachelor’s or Master’s degree in Computer Science, Data Science, AI, or related field
+
+Strong academic projects in machine learning or software development preferred
+
+CGPA ≥ 7.0 preferred
+
+Projects (Preferred)
+
+Candidates who have built projects such as:
+
+Resume analyzer
+
+Chatbot using NLP
+
+Machine learning prediction system
+
+Streamlit dashboard
+
+AI applications using LLMs
+
+will be given preference.

@@ -39,9 +39,14 @@ col1, col2 = st.columns(2)
 with col1:
     st.subheader("1) Upload Resume (PDF/DOCX)")
     resume_file = st.file_uploader("Resume file", type=["pdf", "docx"])
+    st.subheader("2) Job Title")
+    job_title = st.text_input(
+    "Job title",
+    placeholder="Example: Machine Learning Engineer"
+    )
 
 with col2:
-    st.subheader("2) Job Description")
+    st.subheader("3) Job Description")
     jd_text = st.text_area("Paste job description here", height=220, placeholder="Paste the job description text...")
 
 run = st.button("Analyze Match", type="primary", use_container_width=True)
@@ -110,44 +115,64 @@ if run:
     # -------------------------------
     # Store in Vector DB ( Chroma)
     # -------------------------------
-    full_vector_store = get_vector_store("full")
+    full_vector_store = None
+    resume_id = None
+    job_id = None
 
-    resume_id = full_vector_store.add_resume(
-        resume_text=parsed.raw_text,
-        metadata={
-            "filename": resume_file.name,
-            "cgpa": parsed.cgpa or "Not detected",
-            "years_experience": (
-                parsed.years_experience_estimate
-                if parsed.years_experience_estimate is not None
-                else -1
-            )
-        }
-    )
+    try:
+        full_vector_store = get_vector_store("full")
 
-    job_id = full_vector_store.add_job(
-        jd_text=jd_clean,
-        metadata={
-            "source": "streamlit_input"
-        }
-    )
+        resume_id = full_vector_store.add_resume(
+            resume_text=parsed.raw_text,
+            metadata={
+                "filename": resume_file.name,
+                "cgpa": parsed.cgpa or "Not detected",
+                "years_experience": (
+                    parsed.years_experience_estimate
+                    if parsed.years_experience_estimate is not None
+                    else -1
+                )
+            }
+        )
 
-    st.caption(
-        f"Stored in ChromaDB — Resume ID: {resume_id} | "
-        f"Job ID: {job_id}"
-    )
+        job_id = full_vector_store.add_job(
+            jd_text=jd_clean,
+            metadata={
+                "source": "streamlit_input"
+            }
+        )
 
-    db_col1, db_col2 = st.columns(2)
+        st.caption(
+            f"Stored in ChromaDB — Resume ID: {resume_id} | "
+            f"Job ID: {job_id}"
+        )
 
-    db_col1.metric(
-        "Stored Resumes",
-        full_vector_store.resume_count()
-    )
+        st.success(
+        "Resume and job-description embeddings were stored successfully."
+        )
 
-    db_col2.metric(
-        "Stored Job Descriptions",
-        full_vector_store.job_count()
-    )
+        with st.expander("Vector database details"):
+            st.write("Resume ID:", resume_id)
+            st.write("Job ID:", job_id)
+            st.write("Embedding model:", "Full fine-tuned model")
+            db_col1, db_col2 = st.columns(2)
+
+        db_col1.metric(
+            "Stored Resumes",
+            full_vector_store.resume_count()
+        )
+
+        db_col2.metric(
+            "Stored Job Descriptions",
+            full_vector_store.job_count()
+        )
+    except Exception as exc:
+        st.warning(
+            "Resume matching completed, but vector database storage was unavailable."
+        )
+
+        if show_raw:
+            st.exception(exc)
 
     # Debug (optional)
     #st.write("DEBUG jd_skills_count:", len(jd_sk))
@@ -282,45 +307,46 @@ if run:
         with st.expander("Show raw extracted resume text"):
             st.text(parsed.raw_text[:20000])
 
-    # Resumes stored in Vector DB 
-    st.markdown("---")
-    st.subheader("Similar Jobs from Vector Database")
+    # Retrieve similar jobs from the vector database 
+    if full_vector_store is not None:
+        st.markdown("---")
+        st.subheader("Top Similar Stored Job Descriptions")
 
-    similar_jobs = full_vector_store.find_similar_jobs(
-        resume_text=parsed.raw_text,
-        top_k=6
-    )
+        similar_jobs = full_vector_store.find_similar_jobs(
+            resume_text=parsed.raw_text,
+            top_k=6
+        )
 
-    job_ids = similar_jobs.get("ids", [[]])[0]
-    job_metadata = similar_jobs.get("metadatas", [[]])[0]
-    job_documents = similar_jobs.get("documents", [[]])[0]
-    job_distances = similar_jobs.get("distances", [[]])[0]
+        job_ids = similar_jobs.get("ids", [[]])[0]
+        job_metadata = similar_jobs.get("metadatas", [[]])[0]
+        job_documents = similar_jobs.get("documents", [[]])[0]
+        job_distances = similar_jobs.get("distances", [[]])[0]
 
-    if not job_ids:
-        st.info("No stored job descriptions are available yet.")
-    else:
-        displayed = 0
+        if not job_ids:
+            st.info("No stored job descriptions are available yet.")
+        else:
+            displayed = 0
 
-        for stored_job_id, metadata, document, distance in zip(
-            job_ids,
-            job_metadata,
-            job_documents,
-            job_distances
-        ):
-            # Do not show the same JD that was just submitted
-            if stored_job_id == job_id:
-                continue
-
-            displayed += 1
-
-            with st.expander(
-                f"{displayed}. Stored Job — {stored_job_id}"
+            for stored_job_id, metadata, document, distance in zip(
+                job_ids,
+                job_metadata,
+                job_documents,
+                job_distances
             ):
-                st.write("Metadata:", metadata)
-                st.write("Vector distance:", round(float(distance), 4))
-                st.text(document[:1500])
+                # Do not show the same JD that was just submitted
+                if stored_job_id == job_id:
+                    continue
 
-        if displayed == 0:
-            st.info(
-                "No other stored job descriptions are available for comparison yet."
-            )
+                displayed += 1
+
+                with st.expander(
+                    f"{displayed}. Stored Job — {stored_job_id}"
+                ):
+                    st.write("Metadata:", metadata)
+                    st.write("Vector distance:", round(float(distance), 4))
+                    st.text(document[:1500])
+
+            if displayed == 0:
+                st.info(
+                    "No other stored job descriptions are available for comparison yet."
+                )

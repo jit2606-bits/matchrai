@@ -27,14 +27,21 @@ pip install transformers==4.46.3
 pip install sentence-transformers==3.3.1
 
 streamlit run app.py
-
+---------------------------------------------------------------------------------
+- Scripts are inside the ml sub-directory. Hence we have to follow the pattern
+ `python -m ml.script_name`  
+---------------------------------------------------------------------------------
 - Reports
 - Individual resume comparison statistics using all three models
 cd ml
 pip install openpyxl
 python evaluate_models.py
+Updated format : python -m ml.evaluate_models.py
 
 - Batch resume comparison statistics using all three models
 cd ml
 python evaluate_batch_resumes.py
+Updated format : python -m ml.evaluate_batch_resumes.py
 
+- Vector Database ( ChromaDB) to store embeddings 
+python -m pip install chromadb

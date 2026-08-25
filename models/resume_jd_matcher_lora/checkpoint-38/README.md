@@ -3,95 +3,93 @@ tags:
 - sentence-transformers
 - sentence-similarity
 - feature-extraction
+- dense
 - generated_from_trainer
 - dataset_size:150
 - loss:CosineSimilarityLoss
 base_model: sentence-transformers/all-MiniLM-L6-v2
 widget:
-- source_sentence: Human resources resume with recruiting coordination, onboarding
-    documents, scheduling, and employee records. Strong communication, teamwork, documentation,
-    and problem-solving skills.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to LLMs, APIs, SQL.
   sentences:
+  - Entry-Level Data Scientist role in Analytics requiring data visualization, pandas,
+    statistics, regression, Python. Preferred qualifications include XGBoost, Tableau.
+    Candidate should communicate results clearly, work with Git, and document model
+    behavior.
+  - Entry-Level AI Application Developer role in GenAI Apps requiring Python, Docker,
+    SQL, LLMs, APIs, FastAPI. Preferred qualifications include AWS, Hugging Face.
+    Candidate should communicate results clearly, work with Git, and document model
+    behavior.
+  - Entry-Level MLOps Engineer role in MLOps requiring GitHub Actions, CI/CD, Python,
+    model deployment, MLflow, Docker. Preferred qualifications include ECS, SageMaker,
+    CloudWatch. Candidate should communicate results clearly, work with Git, and document
+    model behavior.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to APIs, Docker, FastAPI.
+  sentences:
+  - Entry-Level MLOps Engineer role in MLOps requiring model deployment, AWS, Python,
+    Docker, monitoring, CI/CD, FastAPI, GitHub Actions. Preferred qualifications include
+    Kubernetes, SageMaker. Candidate should communicate results clearly, work with
+    Git, and document model behavior.
   - Entry-Level AI Application Developer role in GenAI Apps requiring FastAPI, APIs,
     SQL, Docker, LLMs. Preferred qualifications include ChromaDB, Hugging Face. Candidate
     should communicate results clearly, work with Git, and document model behavior.
-  - Entry-Level AI Application Developer role in GenAI Apps requiring Docker, evaluation,
-    LLMs, RAG, Git, SQL. Preferred qualifications include AWS, Streamlit, ChromaDB,
-    authentication. Candidate should communicate results clearly, work with Git, and
-    document model behavior.
-  - Junior NLP Engineer role in LLM/NLP requiring RAG, semantic search, Python, transformers,
-    text classification. Preferred qualifications include FAISS, ChromaDB. Candidate
-    should communicate results clearly, work with Git, and document model behavior.
-- source_sentence: Used Python, SQL, pandas, and visualization for academic analytics
-    projects with some machine learning exposure. Some exposure to SQL, regression,
-    NumPy.
+  - Entry-Level MLOps Engineer role in MLOps requiring MLflow, monitoring, AWS, CI/CD,
+    Docker, Python, FastAPI, model deployment. Preferred qualifications include Terraform,
+    CloudWatch, ECS. Candidate should communicate results clearly, work with Git,
+    and document model behavior.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to Git, SQL, evaluation.
   sentences:
-  - Entry-Level MLOps Engineer role in MLOps requiring GitHub Actions, FastAPI, AWS,
-    model deployment, MLflow, Python. Preferred qualifications include SageMaker,
-    ECS, Terraform, Kubernetes. Candidate should communicate results clearly, work
+  - Entry-Level Financial Data Scientist role in Finance AI requiring SQL, financial
+    data, scikit-learn, NLP, Python. Preferred qualifications include backtesting,
+    dashboards, news sentiment. Candidate should communicate results clearly, work
     with Git, and document model behavior.
+  - Entry-Level AI Application Developer role in GenAI Apps requiring Git, Python,
+    evaluation, RAG, APIs, Docker, SQL. Preferred qualifications include AWS, ChromaDB.
+    Candidate should communicate results clearly, work with Git, and document model
+    behavior.
   - Entry-Level Data Scientist role in Analytics requiring regression, NumPy, SQL,
     data visualization, statistics, pandas. Preferred qualifications include Git,
     ETL, Power BI, XGBoost. Candidate should communicate results clearly, work with
     Git, and document model behavior.
+- source_sentence: Built Python ML projects and containerized simple APIs with Docker
+    and GitHub version control. Some exposure to CI/CD, FastAPI, MLflow.
+  sentences:
+  - Entry-Level AI Application Developer role in GenAI Apps requiring LLMs, evaluation,
+    SQL, FastAPI, RAG, Python, APIs. Preferred qualifications include LangChain, ChromaDB,
+    authentication, Streamlit. Candidate should communicate results clearly, work
+    with Git, and document model behavior.
+  - Entry-Level Financial Data Scientist role in Finance AI requiring statistics,
+    financial data, Python, forecasting, NLP, SQL. Preferred qualifications include
+    dashboards, risk modeling. Candidate should communicate results clearly, work
+    with Git, and document model behavior.
+  - Entry-Level MLOps Engineer role in MLOps requiring model deployment, FastAPI,
+    Python, AWS, MLflow, CI/CD, monitoring. Preferred qualifications include Terraform,
+    ECS. Candidate should communicate results clearly, work with Git, and document
+    model behavior.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to Python, SQL, FastAPI.
+  sentences:
+  - Entry-Level AI Application Developer role in GenAI Apps requiring RAG, Docker,
+    LLMs, evaluation, Python, FastAPI, SQL. Preferred qualifications include Streamlit,
+    ChromaDB. Candidate should communicate results clearly, work with Git, and document
+    model behavior.
   - Junior Computer Vision Engineer role in Computer Vision requiring image classification,
     NumPy, OpenCV, CNNs, object detection. Preferred qualifications include deployment,
     data augmentation, ResNet. Candidate should communicate results clearly, work
     with Git, and document model behavior.
-- source_sentence: Used Python, SQL, pandas, and visualization for academic analytics
-    projects with some machine learning exposure. Some exposure to regression, pandas,
-    scikit-learn.
-  sentences:
-  - Junior NLP Engineer role in LLM/NLP requiring transformers, Python, FastAPI, NLP,
-    embeddings. Preferred qualifications include LangChain, FAISS, ChromaDB. Candidate
-    should communicate results clearly, work with Git, and document model behavior.
-  - Entry-Level Data Scientist role in Analytics requiring regression, SQL, NumPy,
-    scikit-learn, data visualization, Python, pandas. Preferred qualifications include
-    ETL, XGBoost, experiment design, Git. Candidate should communicate results clearly,
-    work with Git, and document model behavior.
-  - Junior Computer Vision Engineer role in Computer Vision requiring object detection,
-    Python, CNNs, model evaluation, PyTorch, NumPy, OpenCV, image classification.
-    Preferred qualifications include data augmentation, deployment, ResNet. Candidate
-    should communicate results clearly, work with Git, and document model behavior.
-- source_sentence: Created NLP and LLM applications with Hugging Face transformers,
-    sentence-transformers, embeddings, RAG, ChromaDB, FastAPI, and semantic search.
-    Additional experience includes semantic search, NLP, LangChain, Hugging Face.
-  sentences:
-  - Entry-Level Data Scientist role in Analytics requiring NumPy, Python, data visualization,
-    statistics, A/B testing, SQL. Preferred qualifications include Tableau, XGBoost.
-    Candidate should communicate results clearly, work with Git, and document model
-    behavior.
-  - Entry-Level Machine Learning Engineer role in General AI requiring FastAPI, feature
-    engineering, Docker, TensorFlow, ML pipelines, model evaluation. Preferred qualifications
-    include MLflow, Airflow, CI/CD. Candidate should communicate results clearly,
-    work with Git, and document model behavior.
-  - Junior NLP Engineer role in LLM/NLP requiring FastAPI, embeddings, semantic search,
-    NLP, Hugging Face. Preferred qualifications include LangChain, prompt engineering.
-    Candidate should communicate results clearly, work with Git, and document model
-    behavior.
-- source_sentence: Built healthcare AI prototype using Python, FastAPI, RAG, FHIR
-    concepts, clinical care gap logic, LLM evaluation, and medical terminology. Additional
-    experience includes FastAPI, semantic search, HL7, FHIR.
-  sentences:
-  - Junior Healthcare AI Engineer role in Healthcare AI requiring FHIR, Python, clinical
-    data, HL7, LLMs, FastAPI. Preferred qualifications include EHR integration, semantic
-    search. Candidate should communicate results clearly, work with Git, and document
-    model behavior.
-  - Junior Computer Vision Engineer role in Computer Vision requiring Python, OpenCV,
-    image classification, NumPy, CNNs, PyTorch, model evaluation, object detection.
-    Preferred qualifications include data augmentation, YOLO, ResNet, MONAI. Candidate
-    should communicate results clearly, work with Git, and document model behavior.
-  - Junior NLP Engineer role in LLM/NLP requiring Python, RAG, Hugging Face, semantic
-    search, embeddings, text classification. Preferred qualifications include LangChain,
-    FAISS, ChromaDB. Candidate should communicate results clearly, work with Git,
-    and document model behavior.
+  - Entry-Level Data Scientist role in Analytics requiring regression, NumPy, data
+    visualization, A/B testing, SQL. Preferred qualifications include XGBoost, experiment
+    design, ETL. Candidate should communicate results clearly, work with Git, and
+    document model behavior.
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
 
 # SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
 
-This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). It maps sentences & paragraphs to a 384-dimensional dense vector space and can be used for retrieval.
+This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). It maps inputs to a 384-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, classification, clustering, and more.
 
 ## Model Details
 
@@ -118,7 +116,7 @@ This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [s
 SentenceTransformer(
   (0): Transformer({'transformer_task': 'feature-extraction', 'modality_config': {'text': {'method': 'forward', 'method_output_name': 'last_hidden_state'}}, 'module_output_name': 'token_embeddings', 'architecture': 'BertModel'})
   (1): Pooling({'embedding_dimension': 384, 'pooling_mode': 'mean', 'include_prompt': True})
-  (2): Normalize({})
+  (2): Normalize({'module_input_name': 'sentence_embedding', 'module_output_name': 'sentence_embedding'})
 )
 ```
 
@@ -139,9 +137,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    'Built healthcare AI prototype using Python, FastAPI, RAG, FHIR concepts, clinical care gap logic, LLM evaluation, and medical terminology. Additional experience includes FastAPI, semantic search, HL7, FHIR.',
-    'Junior Healthcare AI Engineer role in Healthcare AI requiring FHIR, Python, clinical data, HL7, LLMs, FastAPI. Preferred qualifications include EHR integration, semantic search. Candidate should communicate results clearly, work with Git, and document model behavior.',
-    'Junior NLP Engineer role in LLM/NLP requiring Python, RAG, Hugging Face, semantic search, embeddings, text classification. Preferred qualifications include LangChain, FAISS, ChromaDB. Candidate should communicate results clearly, work with Git, and document model behavior.',
+    'Built full-stack class projects using Python APIs, SQL, Git, and basic machine learning models. Some exposure to Python, SQL, FastAPI.',
+    'Entry-Level AI Application Developer role in GenAI Apps requiring RAG, Docker, LLMs, evaluation, Python, FastAPI, SQL. Preferred qualifications include Streamlit, ChromaDB. Candidate should communicate results clearly, work with Git, and document model behavior.',
+    'Entry-Level Data Scientist role in Analytics requiring regression, NumPy, data visualization, A/B testing, SQL. Preferred qualifications include XGBoost, experiment design, ETL. Candidate should communicate results clearly, work with Git, and document model behavior.',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -150,9 +148,9 @@ print(embeddings.shape)
 # Get the similarity scores for the embeddings
 similarities = model.similarity(embeddings, embeddings)
 print(similarities)
-# tensor([[1.0000, 0.8557, 0.4245],
-#         [0.8557, 1.0000, 0.5371],
-#         [0.4245, 0.5371, 1.0000]])
+# tensor([[1.0000, 0.6162, 0.5608],
+#         [0.6162, 1.0000, 0.6516],
+#         [0.5608, 0.6516, 1.0000]])
 ```
 <!--
 ### Direct Usage (Transformers)
@@ -302,6 +300,8 @@ You can finetune this model on your own dataset.
 - `dataloader_pin_memory`: True
 - `dataloader_persistent_workers`: False
 - `dataloader_prefetch_factor`: None
+- `dataloader_multiprocessing_context`: None
+- `dataloader_in_order`: True
 - `remove_unused_columns`: True
 - `label_names`: None
 - `train_sampling_strategy`: random
@@ -319,35 +319,43 @@ You can finetune this model on your own dataset.
 - `skip_memory_metrics`: True
 - `do_predict`: False
 - `resume_from_checkpoint`: None
-- `warmup_ratio`: None
 - `local_rank`: -1
 - `prompts`: None
 - `batch_sampler`: batch_sampler
 - `multi_dataset_batch_sampler`: proportional
 - `router_mapping`: {}
 - `learning_rate_mapping`: {}
+- `warmup_ratio`: None
 
 </details>
 
 ### Training Logs
 | Epoch  | Step | Training Loss |
 |:------:|:----:|:-------------:|
-| 0.5263 | 10   | 0.0360        |
-| 1.0526 | 20   | 0.0302        |
-| 1.5789 | 30   | 0.0163        |
+| 0.5263 | 10   | 0.0359        |
+| 1.0526 | 20   | 0.0299        |
+| 1.5789 | 30   | 0.0161        |
 
 
 ### Training Time
-- **Training**: 11.1 seconds
+- **Training**: 11.2 seconds
 
 ### Framework Versions
 - Python: 3.13.14
-- Sentence Transformers: 5.6.0
-- Transformers: 5.13.0
+- Sentence Transformers: 6.0.0
+- Transformers: 5.15.1
 - PyTorch: 2.6.0+cpu
 - Accelerate: 1.14.0
-- Datasets: 5.0.0
+- Datasets: 5.0.1
 - Tokenizers: 0.22.2
+
+## Additional Resources
+
+- [Training and Finetuning Embedding Models with Sentence Transformers](https://huggingface.co/blog/train-sentence-transformers): the end-to-end guide for training or finetuning Sentence Transformer models.
+- [Introduction to Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka): variable-size embeddings that can be truncated with minimal quality loss.
+- [Binary and Scalar Embedding Quantization for Significantly Faster & Cheaper Retrieval](https://huggingface.co/blog/embedding-quantization): post-training compression of embedding vectors.
+- [Multimodal Embedding & Reranker Models with Sentence Transformers](https://huggingface.co/blog/multimodal-sentence-transformers): use text, image, audio, and video models through the same API.
+- [Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers](https://huggingface.co/blog/train-multimodal-sentence-transformers): train multimodal embedding models, with a Visual Document Retrieval walkthrough.
 
 ## Citation
 

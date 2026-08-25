@@ -3,95 +3,93 @@ tags:
 - sentence-transformers
 - sentence-similarity
 - feature-extraction
+- dense
 - generated_from_trainer
 - dataset_size:150
 - loss:CosineSimilarityLoss
 base_model: sentence-transformers/all-MiniLM-L6-v2
 widget:
-- source_sentence: Retail management resume with scheduling, inventory, team leadership,
-    and customer service experience. Strong communication, teamwork, documentation,
-    and problem-solving skills.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to LLMs, APIs, SQL.
   sentences:
-  - Entry-Level MLOps Engineer role in MLOps requiring MLflow, monitoring, FastAPI,
-    GitHub Actions, AWS. Preferred qualifications include ECS, CloudWatch. Candidate
-    should communicate results clearly, work with Git, and document model behavior.
-  - Junior Healthcare AI Engineer role in Healthcare AI requiring RAG, clinical data,
-    Python, LLMs, HL7. Preferred qualifications include medical terminology, semantic
-    search. Candidate should communicate results clearly, work with Git, and document
+  - Entry-Level Data Scientist role in Analytics requiring data visualization, pandas,
+    statistics, regression, Python. Preferred qualifications include XGBoost, Tableau.
+    Candidate should communicate results clearly, work with Git, and document model
+    behavior.
+  - Entry-Level AI Application Developer role in GenAI Apps requiring Python, Docker,
+    SQL, LLMs, APIs, FastAPI. Preferred qualifications include AWS, Hugging Face.
+    Candidate should communicate results clearly, work with Git, and document model
+    behavior.
+  - Entry-Level MLOps Engineer role in MLOps requiring GitHub Actions, CI/CD, Python,
+    model deployment, MLflow, Docker. Preferred qualifications include ECS, SageMaker,
+    CloudWatch. Candidate should communicate results clearly, work with Git, and document
     model behavior.
-  - Junior Computer Vision Engineer role in Computer Vision requiring model evaluation,
-    CNNs, object detection, NumPy, image classification, PyTorch, Python. Preferred
-    qualifications include deployment, MONAI, data augmentation. Candidate should
-    communicate results clearly, work with Git, and document model behavior.
-- source_sentence: Human resources resume with recruiting coordination, onboarding
-    documents, scheduling, and employee records. Strong communication, teamwork, documentation,
-    and problem-solving skills.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to APIs, Docker, FastAPI.
   sentences:
-  - Entry-Level Financial Data Scientist role in Finance AI requiring NLP, statistics,
-    scikit-learn, forecasting, time series, financial data, Python, SQL. Preferred
-    qualifications include dashboards, news sentiment. Candidate should communicate
-    results clearly, work with Git, and document model behavior.
-  - Entry-Level AI Application Developer role in GenAI Apps requiring FastAPI, RAG,
-    Docker, SQL, LLMs. Preferred qualifications include authentication, Streamlit.
-    Candidate should communicate results clearly, work with Git, and document model
-    behavior.
-  - Entry-Level Data Scientist role in Analytics requiring NumPy, Python, data visualization,
-    statistics, A/B testing, SQL. Preferred qualifications include Tableau, XGBoost.
-    Candidate should communicate results clearly, work with Git, and document model
-    behavior.
-- source_sentence: Completed analytics projects using Python, SQL, regression, Tableau,
-    and basic finance coursework. Some exposure to financial data, time series, Python.
-  sentences:
-  - Entry-Level Financial Data Scientist role in Finance AI requiring NLP, time series,
-    Python, financial data, statistics, forecasting. Preferred qualifications include
-    risk modeling, XGBoost, backtesting. Candidate should communicate results clearly,
-    work with Git, and document model behavior.
-  - Entry-Level Financial Data Scientist role in Finance AI requiring statistics,
-    Python, financial data, NLP, SQL, time series, forecasting, scikit-learn. Preferred
-    qualifications include backtesting, XGBoost. Candidate should communicate results
-    clearly, work with Git, and document model behavior.
-  - Entry-Level MLOps Engineer role in MLOps requiring monitoring, GitHub Actions,
-    AWS, MLflow, model deployment. Preferred qualifications include ECS, Airflow,
-    Terraform, CloudWatch. Candidate should communicate results clearly, work with
+  - Entry-Level MLOps Engineer role in MLOps requiring model deployment, AWS, Python,
+    Docker, monitoring, CI/CD, FastAPI, GitHub Actions. Preferred qualifications include
+    Kubernetes, SageMaker. Candidate should communicate results clearly, work with
     Git, and document model behavior.
-- source_sentence: Deployed ML models using FastAPI, Docker, GitHub Actions, AWS ECS,
-    MLflow, CloudWatch monitoring, and reproducible pipelines. Additional experience
-    includes model deployment, ECS, Airflow, GitHub Actions.
+  - Entry-Level AI Application Developer role in GenAI Apps requiring FastAPI, APIs,
+    SQL, Docker, LLMs. Preferred qualifications include ChromaDB, Hugging Face. Candidate
+    should communicate results clearly, work with Git, and document model behavior.
+  - Entry-Level MLOps Engineer role in MLOps requiring MLflow, monitoring, AWS, CI/CD,
+    Docker, Python, FastAPI, model deployment. Preferred qualifications include Terraform,
+    CloudWatch, ECS. Candidate should communicate results clearly, work with Git,
+    and document model behavior.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to Git, SQL, evaluation.
   sentences:
+  - Entry-Level Financial Data Scientist role in Finance AI requiring SQL, financial
+    data, scikit-learn, NLP, Python. Preferred qualifications include backtesting,
+    dashboards, news sentiment. Candidate should communicate results clearly, work
+    with Git, and document model behavior.
+  - Entry-Level AI Application Developer role in GenAI Apps requiring Git, Python,
+    evaluation, RAG, APIs, Docker, SQL. Preferred qualifications include AWS, ChromaDB.
+    Candidate should communicate results clearly, work with Git, and document model
+    behavior.
   - Entry-Level Data Scientist role in Analytics requiring regression, NumPy, SQL,
     data visualization, statistics, pandas. Preferred qualifications include Git,
     ETL, Power BI, XGBoost. Candidate should communicate results clearly, work with
     Git, and document model behavior.
-  - Entry-Level Data Scientist role in Analytics requiring SQL, NumPy, data visualization,
-    Python, scikit-learn. Preferred qualifications include ETL, Git. Candidate should
-    communicate results clearly, work with Git, and document model behavior.
-  - Entry-Level MLOps Engineer role in MLOps requiring CI/CD, FastAPI, AWS, GitHub
-    Actions, MLflow, model deployment. Preferred qualifications include CloudWatch,
-    Airflow, ECS, SageMaker. Candidate should communicate results clearly, work with
-    Git, and document model behavior.
-- source_sentence: Completed deep learning coursework with CNN image classification
-    using TensorFlow and Python notebooks. Some exposure to CNNs, model evaluation,
-    PyTorch.
+- source_sentence: Built Python ML projects and containerized simple APIs with Docker
+    and GitHub version control. Some exposure to CI/CD, FastAPI, MLflow.
   sentences:
-  - Junior Computer Vision Engineer role in Computer Vision requiring object detection,
-    model evaluation, NumPy, CNNs, Python, PyTorch, OpenCV, image classification.
-    Preferred qualifications include TensorFlow, deployment. Candidate should communicate
-    results clearly, work with Git, and document model behavior.
-  - Entry-Level Financial Data Scientist role in Finance AI requiring time series,
-    statistics, forecasting, SQL, Python, NLP, financial data, scikit-learn. Preferred
-    qualifications include XGBoost, news sentiment, dashboards, PyTorch. Candidate
-    should communicate results clearly, work with Git, and document model behavior.
-  - Entry-Level MLOps Engineer role in MLOps requiring MLflow, CI/CD, FastAPI, monitoring,
-    GitHub Actions, model deployment. Preferred qualifications include SageMaker,
-    Airflow. Candidate should communicate results clearly, work with Git, and document
+  - Entry-Level AI Application Developer role in GenAI Apps requiring LLMs, evaluation,
+    SQL, FastAPI, RAG, Python, APIs. Preferred qualifications include LangChain, ChromaDB,
+    authentication, Streamlit. Candidate should communicate results clearly, work
+    with Git, and document model behavior.
+  - Entry-Level Financial Data Scientist role in Finance AI requiring statistics,
+    financial data, Python, forecasting, NLP, SQL. Preferred qualifications include
+    dashboards, risk modeling. Candidate should communicate results clearly, work
+    with Git, and document model behavior.
+  - Entry-Level MLOps Engineer role in MLOps requiring model deployment, FastAPI,
+    Python, AWS, MLflow, CI/CD, monitoring. Preferred qualifications include Terraform,
+    ECS. Candidate should communicate results clearly, work with Git, and document
     model behavior.
+- source_sentence: Built full-stack class projects using Python APIs, SQL, Git, and
+    basic machine learning models. Some exposure to Python, SQL, FastAPI.
+  sentences:
+  - Entry-Level AI Application Developer role in GenAI Apps requiring RAG, Docker,
+    LLMs, evaluation, Python, FastAPI, SQL. Preferred qualifications include Streamlit,
+    ChromaDB. Candidate should communicate results clearly, work with Git, and document
+    model behavior.
+  - Entry-Level MLOps Engineer role in MLOps requiring GitHub Actions, FastAPI, AWS,
+    model deployment, MLflow, Python. Preferred qualifications include SageMaker,
+    ECS, Terraform, Kubernetes. Candidate should communicate results clearly, work
+    with Git, and document model behavior.
+  - Entry-Level Data Scientist role in Analytics requiring regression, NumPy, data
+    visualization, A/B testing, SQL. Preferred qualifications include XGBoost, experiment
+    design, ETL. Candidate should communicate results clearly, work with Git, and
+    document model behavior.
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
 
 # SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
 
-This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). It maps sentences & paragraphs to a 384-dimensional dense vector space and can be used for retrieval.
+This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). It maps inputs to a 384-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, classification, clustering, and more.
 
 ## Model Details
 
@@ -118,7 +116,7 @@ This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [s
 SentenceTransformer(
   (0): Transformer({'transformer_task': 'feature-extraction', 'modality_config': {'text': {'method': 'forward', 'method_output_name': 'last_hidden_state'}}, 'module_output_name': 'token_embeddings', 'architecture': 'BertModel'})
   (1): Pooling({'embedding_dimension': 384, 'pooling_mode': 'mean', 'include_prompt': True})
-  (2): Normalize({})
+  (2): Normalize({'module_input_name': 'sentence_embedding', 'module_output_name': 'sentence_embedding'})
 )
 ```
 
@@ -139,9 +137,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    'Completed deep learning coursework with CNN image classification using TensorFlow and Python notebooks. Some exposure to CNNs, model evaluation, PyTorch.',
-    'Junior Computer Vision Engineer role in Computer Vision requiring object detection, model evaluation, NumPy, CNNs, Python, PyTorch, OpenCV, image classification. Preferred qualifications include TensorFlow, deployment. Candidate should communicate results clearly, work with Git, and document model behavior.',
-    'Entry-Level MLOps Engineer role in MLOps requiring MLflow, CI/CD, FastAPI, monitoring, GitHub Actions, model deployment. Preferred qualifications include SageMaker, Airflow. Candidate should communicate results clearly, work with Git, and document model behavior.',
+    'Built full-stack class projects using Python APIs, SQL, Git, and basic machine learning models. Some exposure to Python, SQL, FastAPI.',
+    'Entry-Level AI Application Developer role in GenAI Apps requiring RAG, Docker, LLMs, evaluation, Python, FastAPI, SQL. Preferred qualifications include Streamlit, ChromaDB. Candidate should communicate results clearly, work with Git, and document model behavior.',
+    'Entry-Level Data Scientist role in Analytics requiring regression, NumPy, data visualization, A/B testing, SQL. Preferred qualifications include XGBoost, experiment design, ETL. Candidate should communicate results clearly, work with Git, and document model behavior.',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -150,9 +148,9 @@ print(embeddings.shape)
 # Get the similarity scores for the embeddings
 similarities = model.similarity(embeddings, embeddings)
 print(similarities)
-# tensor([[1.0000, 0.7312, 0.3035],
-#         [0.7312, 1.0000, 0.4168],
-#         [0.3035, 0.4168, 1.0000]])
+# tensor([[1.0000, 0.6483, 0.5911],
+#         [0.6483, 1.0000, 0.5701],
+#         [0.5911, 0.5701, 1.0000]])
 ```
 <!--
 ### Direct Usage (Transformers)
@@ -199,17 +197,17 @@ You can finetune this model on your own dataset.
 * Size: 150 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
 * Approximate statistics based on the first 100 samples:
-  |          | sentence_0                                                                        | sentence_1                                                                         | label                                                            |
-  |:---------|:----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------|
-  | type     | string                                                                            | string                                                                             | float                                                            |
-  | modality | text                                                                              | text                                                                               |                                                                  |
-  | details  | <ul><li>min: 32 tokens</li><li>mean: 42.3 tokens</li><li>max: 59 tokens</li></ul> | <ul><li>min: 50 tokens</li><li>mean: 61.95 tokens</li><li>max: 75 tokens</li></ul> | <ul><li>min: 0.16</li><li>mean: 0.69</li><li>max: 0.96</li></ul> |
+  |          | sentence_0                                                                         | sentence_1                                                                        | label                                                           |
+  |:---------|:-----------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------|
+  | type     | string                                                                             | string                                                                            | float                                                           |
+  | modality | text                                                                               | text                                                                              |                                                                 |
+  | details  | <ul><li>min: 32 tokens</li><li>mean: 42.45 tokens</li><li>max: 56 tokens</li></ul> | <ul><li>min: 50 tokens</li><li>mean: 62.3 tokens</li><li>max: 76 tokens</li></ul> | <ul><li>min: 0.18</li><li>mean: 0.7</li><li>max: 0.96</li></ul> |
 * Samples:
-  | sentence_0                                                                                                                                                                                                                                          | sentence_1                                                                                                                                                                                                                                                                                                    | label             |
-  |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
-  | <code>Developed data science projects using Python, SQL, pandas, scikit-learn, regression, classification, A/B testing, statistics, and Tableau dashboards. Additional experience includes experiment design, Python, Power BI, A/B testing.</code> | <code>Entry-Level Data Scientist role in Analytics requiring regression, scikit-learn, SQL, pandas, Python, A/B testing. Preferred qualifications include XGBoost, Power BI, experiment design. Candidate should communicate results clearly, work with Git, and document model behavior.</code>              | <code>0.89</code> |
-  | <code>Completed healthcare analytics coursework using Python, SQL, dashboards, and some clinical data exploration. Some exposure to clinical data, LLMs, FastAPI.</code>                                                                            | <code>Junior Healthcare AI Engineer role in Healthcare AI requiring clinical data, FastAPI, FHIR, HL7, LLMs. Preferred qualifications include FHIR resources, LangGraph, EHR integration, care gaps. Candidate should communicate results clearly, work with Git, and document model behavior.</code>         | <code>0.64</code> |
-  | <code>Built text classification and sentiment analysis projects using Python, NLTK, spaCy, scikit-learn, and basic transformer models. Some exposure to FastAPI, Hugging Face, Python.</code>                                                       | <code>Junior NLP Engineer role in LLM/NLP requiring RAG, Python, transformers, FastAPI, NLP, Hugging Face, semantic search. Preferred qualifications include Docker, ChromaDB, sentence-transformers, FAISS. Candidate should communicate results clearly, work with Git, and document model behavior.</code> | <code>0.67</code> |
+  | sentence_0                                                                                                                                                                                                       | sentence_1                                                                                                                                                                                                                                                                           | label             |
+  |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
+  | <code>Built Python ML projects and containerized simple APIs with Docker and GitHub version control. Some exposure to CI/CD, FastAPI, MLflow.</code>                                                             | <code>Entry-Level MLOps Engineer role in MLOps requiring model deployment, FastAPI, Python, AWS, MLflow, CI/CD, monitoring. Preferred qualifications include Terraform, ECS. Candidate should communicate results clearly, work with Git, and document model behavior.</code>        | <code>0.68</code> |
+  | <code>Deployed ML models using FastAPI, Docker, GitHub Actions, AWS ECS, MLflow, CloudWatch monitoring, and reproducible pipelines. Additional experience includes monitoring, FastAPI, CI/CD, SageMaker.</code> | <code>Entry-Level MLOps Engineer role in MLOps requiring MLflow, CI/CD, FastAPI, monitoring, GitHub Actions, model deployment. Preferred qualifications include SageMaker, Airflow. Candidate should communicate results clearly, work with Git, and document model behavior.</code> | <code>0.82</code> |
+  | <code>Developed GenAI applications with Python, FastAPI, Streamlit, RAG, ChromaDB, Hugging Face models, Docker, APIs, and evaluation. Additional experience includes Docker, Streamlit, evaluation, LLMs.</code> | <code>Entry-Level AI Application Developer role in GenAI Apps requiring LLMs, RAG, evaluation, FastAPI, Python, APIs, SQL, Docker. Preferred qualifications include Streamlit, AWS. Candidate should communicate results clearly, work with Git, and document model behavior.</code> | <code>0.95</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
@@ -301,6 +299,8 @@ You can finetune this model on your own dataset.
 - `dataloader_pin_memory`: True
 - `dataloader_persistent_workers`: False
 - `dataloader_prefetch_factor`: None
+- `dataloader_multiprocessing_context`: None
+- `dataloader_in_order`: True
 - `remove_unused_columns`: True
 - `label_names`: None
 - `train_sampling_strategy`: random
@@ -318,27 +318,35 @@ You can finetune this model on your own dataset.
 - `skip_memory_metrics`: True
 - `do_predict`: False
 - `resume_from_checkpoint`: None
-- `warmup_ratio`: None
 - `local_rank`: -1
 - `prompts`: None
 - `batch_sampler`: batch_sampler
 - `multi_dataset_batch_sampler`: round_robin
 - `router_mapping`: {}
 - `learning_rate_mapping`: {}
+- `warmup_ratio`: None
 
 </details>
 
 ### Training Time
-- **Training**: 11.9 seconds
+- **Training**: 22.5 seconds
 
 ### Framework Versions
 - Python: 3.13.14
-- Sentence Transformers: 5.6.0
-- Transformers: 5.14.0
+- Sentence Transformers: 6.0.0
+- Transformers: 5.15.1
 - PyTorch: 2.6.0+cpu
 - Accelerate: 1.14.0
-- Datasets: 5.0.0
+- Datasets: 5.0.1
 - Tokenizers: 0.22.2
+
+## Additional Resources
+
+- [Training and Finetuning Embedding Models with Sentence Transformers](https://huggingface.co/blog/train-sentence-transformers): the end-to-end guide for training or finetuning Sentence Transformer models.
+- [Introduction to Matryoshka Embedding Models](https://huggingface.co/blog/matryoshka): variable-size embeddings that can be truncated with minimal quality loss.
+- [Binary and Scalar Embedding Quantization for Significantly Faster & Cheaper Retrieval](https://huggingface.co/blog/embedding-quantization): post-training compression of embedding vectors.
+- [Multimodal Embedding & Reranker Models with Sentence Transformers](https://huggingface.co/blog/multimodal-sentence-transformers): use text, image, audio, and video models through the same API.
+- [Training and Finetuning Multimodal Embedding & Reranker Models with Sentence Transformers](https://huggingface.co/blog/train-multimodal-sentence-transformers): train multimodal embedding models, with a Visual Document Retrieval walkthrough.
 
 ## Citation
 
